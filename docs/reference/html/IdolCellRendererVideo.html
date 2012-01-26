@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>IdolCellRendererVideo</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="Idol Reference Manual">
+<link rel="up" href="widget-api.html" title="Widgets">
+<link rel="prev" href="IdolVideoList.html" title="IdolVideoList">
+<link rel="next" href="api-index-full.html" title="Index of all symbols">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="IdolVideoList.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="widget-api.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Idol Reference Manual</th>
+<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#IdolCellRendererVideo.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#IdolCellRendererVideo.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#IdolCellRendererVideo.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#IdolCellRendererVideo.properties" class="shortcut">Properties</a>
+</td></tr>
+</table>
+<div class="refentry" title="IdolCellRendererVideo">
+<a name="IdolCellRendererVideo"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IdolCellRendererVideo.top_of_page"></a>IdolCellRendererVideo</span></h2>
+<p>IdolCellRendererVideo — a <a href="http://library.mate.org/devel/gtk/unstable/GtkCellRenderer.html"><span class="type">GtkCellRenderer</span></a> widget for listing videos</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1" title="Stability Level">
+<a name="IdolCellRendererVideo.stability-level"></a><h2>Stability Level</h2>
+Unstable, unless otherwise indicated
+</div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="IdolCellRendererVideo.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;idol-cell-renderer-video.h&gt;
+
+                    <a class="link" href="IdolCellRendererVideo.html#IdolCellRendererVideo-struct" title="IdolCellRendererVideo">IdolCellRendererVideo</a>;
+                    <a class="link" href="IdolCellRendererVideo.html#IdolCellRendererVideoClass" title="IdolCellRendererVideoClass">IdolCellRendererVideoClass</a>;
+<a class="link" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo"><span class="returnvalue">IdolCellRendererVideo</span></a> * <a class="link" href="IdolCellRendererVideo.html#idol-cell-renderer-video-new" title="idol_cell_renderer_video_new ()">idol_cell_renderer_video_new</a>  (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_placeholder</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="IdolCellRendererVideo.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+         +----<a href="http://library.mate.org/devel/gtk/unstable/GtkObject.html">GtkObject</a>
+               +----<a href="http://library.mate.org/devel/gtk/unstable/GtkCellRenderer.html">GtkCellRenderer</a>
+                     +----IdolCellRendererVideo
+</pre>
+</div>
+<div class="refsect1" title="Properties">
+<a name="IdolCellRendererVideo.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="IdolCellRendererVideo.html#IdolCellRendererVideo--alignment" title='The "alignment" property'>alignment</a>"                <a href="/usr/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoAlignment"><span class="type">PangoAlignment</span></a>        : Read / Write
+  "<a class="link" href="IdolCellRendererVideo.html#IdolCellRendererVideo--thumbnail" title='The "thumbnail" property'>thumbnail</a>"                <a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>*            : Read / Write
+  "<a class="link" href="IdolCellRendererVideo.html#IdolCellRendererVideo--title" title='The "title" property'>title</a>"                    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
+  "<a class="link" href="IdolCellRendererVideo.html#IdolCellRendererVideo--use-placeholder" title='The "use-placeholder" property'>use-placeholder</a>"          <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="IdolCellRendererVideo.description"></a><h2>Description</h2>
+<p>
+<a class="link" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo"><span class="type">IdolCellRendererVideo</span></a> is a <a href="http://library.mate.org/devel/gtk/unstable/GtkCellRenderer.html"><span class="type">GtkCellRenderer</span></a> for rendering video thumbnails, typically in a <a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a>.
+It supports drawing a video thumbnail, and the video's title underneath.
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="IdolCellRendererVideo.details"></a><h2>Details</h2>
+<div class="refsect2" title="IdolCellRendererVideo">
+<a name="IdolCellRendererVideo-struct"></a><h3>IdolCellRendererVideo</h3>
+<pre class="programlisting">typedef struct _IdolCellRendererVideo IdolCellRendererVideo;</pre>
+<p>
+All the fields in the <a class="link" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo"><span class="type">IdolCellRendererVideo</span></a> structure are private and should never be accessed directly.
+</p>
+</div>
+<hr>
+<div class="refsect2" title="IdolCellRendererVideoClass">
+<a name="IdolCellRendererVideoClass"></a><h3>IdolCellRendererVideoClass</h3>
+<pre class="programlisting">typedef struct {
+	GtkCellRendererClass parent;
+} IdolCellRendererVideoClass;
+</pre>
+<p>
+The class structure for the <a class="link" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo"><span class="type">IdolCellRendererVideo</span></a> type.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><a href="http://library.mate.org/devel/gtk/unstable/GtkCellRenderer.html#GtkCellRendererClass"><span class="type">GtkCellRendererClass</span></a> <em class="structfield"><code><a name="IdolCellRendererVideoClass.parent"></a>parent</code></em>;</span></p></td>
+<td>the parent class
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="idol_cell_renderer_video_new ()">
+<a name="idol-cell-renderer-video-new"></a><h3>idol_cell_renderer_video_new ()</h3>
+<pre class="programlisting"><a class="link" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo"><span class="returnvalue">IdolCellRendererVideo</span></a> * idol_cell_renderer_video_new  (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_placeholder</code></em>);</pre>
+<p>
+Creates a new <a class="link" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo"><span class="type">IdolCellRendererVideo</span></a> with its <a class="link" href="IdolCellRendererVideo.html#IdolCellRendererVideo--use-placeholder" title='The "use-placeholder" property'><span class="type">"use-placeholder"</span></a>
+property set to <em class="parameter"><code>use_placeholder</code></em>. If <em class="parameter"><code>use_placeholder</code></em> is <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>,
+the renderer will display a generic placeholder thumbnail if a
+proper one is not available.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>use_placeholder</code></em> :</span></p></td>
+<td>if <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, use a placeholder thumbnail
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a new <a class="link" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo"><span class="type">IdolCellRendererVideo</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" title="Property Details">
+<a name="IdolCellRendererVideo.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" title='The "alignment" property'>
+<a name="IdolCellRendererVideo--alignment"></a><h3>The <code class="literal">"alignment"</code> property</h3>
+<pre class="programlisting">  "alignment"                <a href="/usr/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoAlignment"><span class="type">PangoAlignment</span></a>        : Read / Write</pre>
+<p>
+A <a href="/usr/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoAlignment"><span class="type">PangoAlignment</span></a> giving the text alignment for the video title.
+</p>
+<p>Default value: PANGO_ALIGN_CENTER</p>
+</div>
+<hr>
+<div class="refsect2" title='The "thumbnail" property'>
+<a name="IdolCellRendererVideo--thumbnail"></a><h3>The <code class="literal">"thumbnail"</code> property</h3>
+<pre class="programlisting">  "thumbnail"                <a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>*            : Read / Write</pre>
+<p>
+A <a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> of a thumbnail of the video to display. When rendered, it will scale to the width of the parent <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeView.html"><span class="type">GtkTreeView</span></a>,
+so can be as large as reasonable.
+</p>
+</div>
+<hr>
+<div class="refsect2" title='The "title" property'>
+<a name="IdolCellRendererVideo--title"></a><h3>The <code class="literal">"title"</code> property</h3>
+<pre class="programlisting">  "title"                    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<p>
+The title of the video, as it should be displayed.
+</p>
+<p>Default value: "Unknown video"</p>
+</div>
+<hr>
+<div class="refsect2" title='The "use-placeholder" property'>
+<a name="IdolCellRendererVideo--use-placeholder"></a><h3>The <code class="literal">"use-placeholder"</code> property</h3>
+<pre class="programlisting">  "use-placeholder"          <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<p>
+If <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, a placeholder image should be used for the video thumbnail if a <a class="link" href="IdolCellRendererVideo.html#IdolCellRendererVideo--thumbnail" title='The "thumbnail" property'><span class="type">"thumbnail"</span></a> isn't provided.
+</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1" title="See Also">
+<a name="IdolCellRendererVideo.see-also"></a><h2>See Also</h2>
+<a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

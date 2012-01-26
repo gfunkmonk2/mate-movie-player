@@ -1,0 +1,254 @@
+Source: mate-movie-player
+Section: video
+Priority: optional
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+XSBC-Original-Maintainer: Sebastien Bacher <seb128@debian.org>
+Uploaders: @MATE_TEAM@
+Build-Depends: debhelper (>= 8),
+               hardening-wrapper,
+               cdbs,
+               mate-common,
+               quilt,
+               python-support (>= 0.6),
+               libglib2.0-dev (>= 2.25.11),
+               libatk1.0-dev (>= 1.29.4),
+               libgtk2.0-dev (>= 2.21.8),
+               libunique-dev,
+               libidol-plparser-dev (>= 1.0.0),
+               liblircclient-dev (>= 0.6.6),
+               libirman-dev (>= 0.4.2),
+               scrollkeeper,
+               libgstreamer0.10-dev (>= 0.10.30),
+               libgstreamer-plugins-base0.10-dev (>= 0.10.30),
+               gstreamer0.10-tools (>= 0.10.30),
+               gstreamer0.10-plugins-base (>= 0.10.30),
+               gstreamer0.10-plugins-good (>= 0.10.30),
+               librsvg2-dev (>= 2.16.0-2),
+               librsvg2-common (>= 2.16.0-2),
+               libcaja-extension-dev,
+               libmusicbrainz4-dev (>= 2.1.1-4.1),
+               mate-icon-theme | mate-icon-theme-gnome | gnome-icon-theme,
+               libdbus-glib-1-dev (>= 0.61),
+               intltool (>= 0.40),
+               autotools-dev,
+               dpkg-dev (>= 1.13.19),
+               libmateconf-dev,
+               shared-mime-info (>= 0.22),
+               libcam-dev [kfreebsd-i386 kfreebsd-amd64],
+               libxtst-dev,
+               libxrandr-dev (>= 1.1.1),
+               libxxf86vm-dev (>= 1.0.1),
+               libx11-dev,
+               libsm-dev,
+               libice-dev,
+               x11proto-core-dev,
+               gtk-doc-tools,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               python-dev (>= 2.3),
+               python-gobject-dev (>= 2.15.3),
+               python-gtk2-dev (>= 2.13),
+               python-gst0.10-dev (>= 0.10.11),
+               python-xdg,
+               python-rdflib,
+               libbluetooth-dev [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64],
+               libgdata-dev (>= 0.9.0),
+               libsoup2.4-dev
+Standards-Version: 3.8.4
+
+Package: idol
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         gstreamer0.10-plugins-base (>= 0.10.30),
+         gstreamer0.10-alsa | gstreamer0.10-audiosink,
+         gstreamer0.10-plugins-good (>= 0.10.7),
+         gstreamer0.10-x,
+         mate-icon-theme | mate-icon-theme-gnome | gnome-icon-theme,
+         idol-common (= ${binary:Version})
+Provides: idol-xine,
+          idol-gstreamer
+Recommends: idol-mozilla (>= ${source:Version}),
+            idol-plugins (>= ${source:Version})
+Suggests: mate-codec-install,
+          gstreamer0.10-pulseaudio (>= 0.10.16-5),
+          gstreamer0.10-plugins-ugly,
+          gstreamer0.10-plugins-bad,
+          gstreamer0.10-ffmpeg
+Description: A simple media player for the MATE desktop based on GStreamer
+ Idol is a simple yet featureful media player for MATE which can read
+ a large number of file formats. It features :
+ .
+    * Shoutcast, m3u, asx, SMIL and ra playlists support
+    * DVD (with menus), VCD and Digital CD (with CDDB) playback
+    * TV-Out configuration with optional resolution switching
+    * 4.0, 5.0, 5.1 and stereo audio output
+    * Full-screen mode (move your mouse and you get nice controls) with
+      Xinerama, dual-head and RandR support
+    * Aspect ratio toggling, scaling based on the video's original size
+    * Full keyboard control
+    * Simple playlist with repeat mode and saving feature
+    * MATE, Caja and GIO integration
+    * Screenshot of the current movie
+    * Brightness and Contrast control
+    * Visualisation plugin when playing audio-only files
+    * Video thumbnailer for caja
+    * Caja properties page
+    * Works on remote displays
+    * DVD, VCD and OGG/OGM subtitles with automatic language selection
+    * Extensible with plugins
+
+Package: idol-mozilla
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         idol (= ${binary:Version}),
+         dbus-x11 (>= 0.61)
+Recommends: epiphany-browser | www-browser
+XB-Npp-Applications: ec8030f7-c20a-464f-9b0e-13a3a9e97384, 92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a
+XB-Npp-Name:  Idol Mozilla plugin
+XB-Npp-MimeType: video/quicktime, video/mp4, image/x-macpaint, image/x-quicktime, application/x-mplayer2, video/x-ms-asf-plugin, video/x-msvideo, video/x-ms-asf, video/x-ms-wmv, video/x-wmv, video/x-ms-wvx, video/x-ms-wm, application/ogg, video/mpeg, audio/wav, audio/x-wav, audio/mpeg
+XB-Npp-Description: Watch Movies in your Browser (http://projects.mate.org/idol/)
+XB-Npp-Filename: libidol-
+Description: Idol Mozilla plugin
+ This package contains the Idol Mozilla plugin, which will
+ enhance your Gecko-based browser to be able to display movie
+ clips.
+ .
+ This plugin should work for Firefox as well as XULRunner based browsers.
+
+Package: idol-common
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: idol-xine (<< 2.20.0-3), idol-gstreamer (<< 2.20.0-3)
+Description: Data files for the Idol media player
+ Idol is a simple yet featureful media player for MATE which can read
+ a large number of file formats.
+ .
+ This package contains common data files and translations.
+
+Package: idol-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: idol (= ${binary:Version}),
+         ${misc:Depends}
+Conflicts: libidol-plparser1-dbg, libidol-plparser7-dbg
+Description: Debugging symbols for the Idol media player
+ Idol is a simple yet featureful media player for MATE which can read
+ a large number of file formats.
+ .
+ This package contains detached debugging symbols.
+
+Package: idol-plugins
+Architecture: any
+Depends: idol (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+         ${python:Depends},
+         python-gobject (>= 2.18),
+         python-gtk2 (>= 2.13),
+         python-gst0.10 (>= 0.10.11),
+         python-xdg,
+         python-rdflib,
+         python-gdbm,
+         python-httplib2
+Recommends: mate-settings-daemon
+Replaces: idol-xine (<< 2.20.0-3), idol-gstreamer (<< 2.20.0-3)
+Suggests: gromit
+Description: Plugins for the Idol media player
+ Idol is a simple yet featureful media player for MATE which can read
+ a large number of file formats.
+ .
+ This package contains a set of recommended plugins for Idol, which
+ allow to:
+ .
+    * Control Idol with an Infrared remote control
+    * Control Idol with the keyboard's media player keys
+    * Keep the Idol window on top of the screen
+    * Display movie properties
+    * Deactivate the screensaver when a movie is playing
+    * Skip to a defined time in the movie
+    * Set the away status in the instant messenger when a movie is
+      playing
+    * Control idol with a mobile phone using the Bluetooth protocol
+    * Share the current playlist via HTTP
+    * Search, browse for and play videos from YouTube
+    * Search, browse for and play videos from the BBC
+ .
+ Additional plugins can be written in C, Python or Vala.
+
+Package: idol-xine
+Architecture: all
+Depends: idol (>= 2.27.1),
+         ${misc:Depends}
+Description: A simple media player for the MATE desktop (transitional package)
+ Idol is a simple yet featureful media player for MATE which can read
+ a large number of file formats.
+ .
+ This package is a transitional package.
+
+Package: idol-gstreamer
+Architecture: all
+Depends: idol (>= 2.27.1),
+         ${misc:Depends}
+Description: A simple media player for the MATE desktop (transitional package)
+ Idol is a simple yet featureful media player for MATE which can read
+ a large number of file formats.
+ .
+ This package is a transitional package.
+
+Package: idol-plugins-extra
+Architecture: any
+Depends: idol (= ${binary:Version}),
+	 python-coherence,
+         ${misc:Depends},
+         ${shlibs:Depends},
+         python-beautifulsoup,
+         python-feedparser
+Recommends: gromit
+Replaces: idol-xine (<< 2.20.0-3),
+          idol-gstreamer (<< 2.20.0-3),
+	  idol-plugins (<< 2.27.92-0ubuntu2),
+          idol-plugins-extra (<< 2.27.1-0ubuntu1)
+Description: Extra plugins for the Idol media player
+ Idol is a simple yet featureful media player for MATE which can read
+ a large number of file formats.
+ .
+ This package contains an extra set plugins for Idol, which allow to:
+ .
+    * Annotate the screen with the Gromit tool
+    * Have a DLNA/UPnP client for Idol powered by Coherence
+    * Stream BBC programs
+ .
+ Additional plugins can be written in C, Python or Vala.
+
+Package: mate-movie-player
+Architecture: all
+Depends: idol,
+         idol-plugins
+Description: MATE Movie Player (metapackage)
+ Idol is a simple yet featureful media player for MATE which can read
+ a large number of file formats. It features :
+ .
+    * Shoutcast, m3u, asx, SMIL and ra playlists support
+    * DVD (with menus), VCD and Digital CD (with CDDB) playback
+    * TV-Out configuration with optional resolution switching
+    * 4.0, 5.0, 5.1 and stereo audio output
+    * Full-screen mode (move your mouse and you get nice controls) with
+      Xinerama, dual-head and RandR support
+    * Aspect ratio toggling, scaling based on the video's original size
+    * Full keyboard control
+    * Simple playlist with repeat mode and saving feature
+    * MATE, Caja and GIO integration
+    * Screenshot of the current movie
+    * Brightness and Contrast control
+    * Visualisation plugin when playing audio-only files
+    * Video thumbnailer for caja
+    * Caja properties page
+    * Works on remote displays
+    * DVD, VCD and OGG/OGM subtitles with automatic language selection
+    * Extensible with plugins
+ .
+ This is a metapackage that depends on idol.

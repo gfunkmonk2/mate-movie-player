@@ -1,0 +1,101 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+[encoding: UTF-8]
+[type: gettext/glade]data/fullscreen.ui
+[type: gettext/glade]data/playlist.ui
+[type: gettext/glade]data/plugins.ui
+[type: gettext/glade]data/properties.ui
+[type: gettext/glade]data/video-list.ui
+data/idol.desktop.in.in.in
+[type: gettext/glade]data/idol.ui
+data/idol.schemas.in
+[type: gettext/glade]data/uri.ui
+src/eggdesktopfile.c
+src/eggfileformatchooser.c
+src/eggsmclient.c
+src/idol-audio-preview.c
+src/idol-cell-renderer-video.c
+src/idol-dnd-menu.c
+src/idol-fullscreen.c
+src/idol-interface.c
+src/idol-menu.c
+src/idol-object.c
+src/idol-open-location.c
+src/idol-options.c
+src/idol-playlist.c
+src/idol-preferences.c
+src/idol-properties-main.c
+src/idol-properties-view.c
+src/idol-sidebar.c
+src/idol-statusbar.c
+src/idol-subtitle-encoding.c
+src/idol-video-list.c
+src/idol-video-thumbnailer.c
+src/idol-time-label.c
+src/idol-uri.c
+src/idol.c
+src/backend/bacon-video-widget-gst-0.10.c
+src/backend/video-utils.c
+src/plugins/idol-plugin-manager.c
+src/plugins/idol-plugins-engine.c
+[type: gettext/ini]src/plugins/bemused/bemused.idol-plugin.in
+src/plugins/bemused/idol-bemused.c
+src/plugins/brasero-disc-recorder/idol-disc-recorder.c
+[type: gettext/ini]src/plugins/brasero-disc-recorder/brasero-disc-recorder.idol-plugin.in
+[type: gettext/ini]src/plugins/chapters/chapters.idol-plugin.in
+[type: gettext/glade]src/plugins/chapters/chapters-edit.ui
+[type: gettext/glade]src/plugins/chapters/chapters-list.ui
+src/plugins/chapters/idol-chapters.c
+src/plugins/chapters/idol-cmml-parser.c
+src/plugins/coherence_upnp/coherence_upnp.py
+[type: gettext/ini]src/plugins/coherence_upnp/coherence_upnp.idol-plugin.in
+[type: gettext/ini]src/plugins/dbus-service/dbus-service.idol-plugin.in
+[type: gettext/ini]src/plugins/galago/galago.idol-plugin.in
+src/plugins/galago/idol-galago.c
+[type: gettext/ini]src/plugins/gromit/gromit.idol-plugin.in
+src/plugins/gromit/idol-gromit.c
+[type: gettext/ini]src/plugins/iplayer/iplayer.idol-plugin.in
+src/plugins/iplayer/iplayer.py
+src/plugins/iplayer/iplayer2.py
+[type: gettext/glade]src/plugins/iplayer/iplayer.ui
+[type: gettext/glade]src/plugins/jamendo/jamendo.ui
+[type: gettext/ini]src/plugins/jamendo/jamendo.idol-plugin.in
+src/plugins/jamendo/jamendo.py
+[type: gettext/ini]src/plugins/lirc/lirc.idol-plugin.in
+src/plugins/lirc/idol-lirc.c
+[type: gettext/ini]src/plugins/media-player-keys/media-player-keys.idol-plugin.in
+src/plugins/mythtv/idol-mythtv.c
+[type: gettext/glade]src/plugins/opensubtitles/opensubtitles.ui
+[type: gettext/ini]src/plugins/opensubtitles/opensubtitles.idol-plugin.in
+src/plugins/opensubtitles/opensubtitles.py
+[type: gettext/ini]src/plugins/ontop/ontop.idol-plugin.in
+src/plugins/properties/idol-movie-properties.c
+src/plugins/properties/bacon-video-widget-properties.c
+[type: gettext/ini]src/plugins/properties/movie-properties.idol-plugin.in
+src/plugins/publish/idol-publish.c
+[type: gettext/ini]src/plugins/publish/publish.idol-plugin.in
+[type: gettext/glade]src/plugins/publish/publish-plugin.ui
+[type: gettext/ini]src/plugins/screensaver/screensaver.idol-plugin.in
+src/plugins/screensaver/idol-screensaver.c
+[type: gettext/ini]src/plugins/screenshot/screenshot.idol-plugin.in
+[type: gettext/glade]src/plugins/screenshot/gallery.ui
+[type: gettext/glade]src/plugins/screenshot/mate-screenshot.ui
+src/plugins/screenshot/mate-screenshot-widget.c
+src/plugins/screenshot/idol-gallery.c
+src/plugins/screenshot/idol-gallery-progress.c
+src/plugins/screenshot/idol-screenshot.c
+src/plugins/screenshot/idol-screenshot-plugin.c
+[type: gettext/ini]src/plugins/skipto/skipto.idol-plugin.in
+src/plugins/skipto/idol-skipto.c
+src/plugins/skipto/idol-skipto-plugin.c
+[type: gettext/glade]src/plugins/skipto/skipto.ui
+src/plugins/tracker/idol-tracker-widget.c
+src/plugins/tracker/idol-tracker.c
+[type: gettext/ini]src/plugins/thumbnail/thumbnail.idol-plugin.in
+[type: gettext/ini]src/plugins/tracker/tracker.idol-plugin.in
+[type: gettext/ini]src/plugins/youtube/youtube.idol-plugin.in
+[type: gettext/glade]src/plugins/youtube/youtube.ui
+src/plugins/youtube/idol-youtube.c
+browser-plugin/idol-plugin-viewer.c
+[type: gettext/ini]src/plugins/pythonconsole/pythonconsole.idol-plugin.in
+src/plugins/pythonconsole/pythonconsole.py

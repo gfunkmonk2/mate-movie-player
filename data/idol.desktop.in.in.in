@@ -1,0 +1,16 @@
+[Desktop Entry]
+_Name=Movie Player
+_Comment=Play movies and songs
+Exec=idol %U
+Icon=idol
+Terminal=false
+Type=Application
+Categories=GTK;MATE;AudioVideo;Player;Video;
+X-MATE-DocPath=idol/idol.xml
+X-MATE-Bugzilla-Bugzilla=MATE
+X-MATE-Bugzilla-Product=idol
+X-MATE-Bugzilla-Component=general
+X-MATE-Bugzilla-Version=@VERSION@
+X-MATE-Bugzilla-OtherBinaries=idol-video-indexer;idol-video-thumbnailer;idol-audio-preview;
+X-MATE-Bugzilla-ExtraInfoScript=@FULL_LIBEXECDIR@/idol/idol-bugreport.py
+StartupNotify=true

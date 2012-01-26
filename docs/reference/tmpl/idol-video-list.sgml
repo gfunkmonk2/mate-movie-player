@@ -1,0 +1,76 @@
+<!-- ##### SECTION Title ##### -->
+IdolVideoList
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT IdolVideoList ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL IdolVideoList::starting-video ##### -->
+<para>
+
+</para>
+
+@idolvideolist: the object which received the signal.
+@arg1: 
+@Returns: 
+
+<!-- ##### ARG IdolVideoList:mrl-column ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolVideoList:tooltip-column ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolVideoList:idol ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT IdolVideoListClass ##### -->
+<para>
+
+</para>
+
+@parent: 
+@starting_video: 
+
+<!-- ##### FUNCTION idol_video_list_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_video_list_get_ui_manager ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 

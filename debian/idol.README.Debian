@@ -1,0 +1,7 @@
+---[ Configuring the output sink
+
+You can choose your preferred output sink by using mate-sound-properties (in
+the mate-control-center package), or by editing the MateConf key:
+    /system/gstreamer/0.10/default/musicaudiosink
+
+The default is to detect your output sink automagically.

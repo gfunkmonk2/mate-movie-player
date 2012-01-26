@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+#-*- makefile -*-
+
+#export DH_VERBOSE=1
+export DEB_BUILD_HARDENING=1
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/patchsys-quilt.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_AUTO_UPDATE_LIBTOOL=pre
+DEB_AUTO_UPDATE_ACLOCAL=1.11
+DEB_AUTO_UPDATE_AUTOCONF=1
+DEB_AUTO_UPDATE_AUTOHEADER=1
+DEB_AUTO_UPDATE_AUTOMAKE=1.11
+
+DEB_CONFIGURE_EXTRA_FLAGS += \
+	--enable-vala=no \
+	--disable-run-in-source-tree \
+	--disable-scrollkeeper
+
+DEB_DH_STRIP_ARGS := --dbg-package=idol-dbg
+
+DEB_DH_MAKESHLIBS_ARGS += -Xdebian/
+
+binary-install/idol-plugins::
+	dh_pysupport -pidol-plugins /usr/lib/idol/plugins
+binary-install/idol-coherence::
+	dh_pysupport -pidol-coherence /usr/lib/idol/plugins
+
+common-binary-predeb-arch::
+	find debian -name *.a -exec rm '{}' \;
+	find debian -name *.la -exec rm '{}' \;

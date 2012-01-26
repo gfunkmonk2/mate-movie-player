@@ -1,0 +1,62 @@
+<!-- ##### SECTION Title ##### -->
+IdolCellRendererVideo
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT IdolCellRendererVideo ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG IdolCellRendererVideo:alignment ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolCellRendererVideo:thumbnail ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolCellRendererVideo:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolCellRendererVideo:use-placeholder ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT IdolCellRendererVideoClass ##### -->
+<para>
+
+</para>
+
+@parent: 
+
+<!-- ##### FUNCTION idol_cell_renderer_video_new ##### -->
+<para>
+
+</para>
+
+@use_placeholder: 
+@Returns: 

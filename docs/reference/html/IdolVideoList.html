@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>IdolVideoList</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="Idol Reference Manual">
+<link rel="up" href="widget-api.html" title="Widgets">
+<link rel="prev" href="widget-api.html" title="Widgets">
+<link rel="next" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="widget-api.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="widget-api.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Idol Reference Manual</th>
+<td><a accesskey="n" href="IdolCellRendererVideo.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#IdolVideoList.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#IdolVideoList.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#IdolVideoList.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#IdolVideoList.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#IdolVideoList.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#IdolVideoList.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry" title="IdolVideoList">
+<a name="IdolVideoList"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IdolVideoList.top_of_page"></a>IdolVideoList</span></h2>
+<p>IdolVideoList — a <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeView.html"><span class="type">GtkTreeView</span></a> widget for listing videos</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1" title="Stability Level">
+<a name="IdolVideoList.stability-level"></a><h2>Stability Level</h2>
+Unstable, unless otherwise indicated
+</div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="IdolVideoList.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;idol-video-list.h&gt;
+
+                    <a class="link" href="IdolVideoList.html#IdolVideoList-struct" title="IdolVideoList">IdolVideoList</a>;
+                    <a class="link" href="IdolVideoList.html#IdolVideoListClass" title="IdolVideoListClass">IdolVideoListClass</a>;
+<a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="returnvalue">IdolVideoList</span></a> *    <a class="link" href="IdolVideoList.html#idol-video-list-new" title="idol_video_list_new ()">idol_video_list_new</a>                (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a href="http://library.mate.org/devel/gtk/unstable/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *      <a class="link" href="IdolVideoList.html#idol-video-list-get-ui-manager" title="idol_video_list_get_ui_manager ()">idol_video_list_get_ui_manager</a>     (<em class="parameter"><code><a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a> *self</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="IdolVideoList.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+         +----<a href="http://library.mate.org/devel/gtk/unstable/GtkObject.html">GtkObject</a>
+               +----<a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html">GtkWidget</a>
+                     +----<a href="http://library.mate.org/devel/gtk/unstable/GtkContainer.html">GtkContainer</a>
+                           +----<a href="http://library.mate.org/devel/gtk/unstable/GtkTreeView.html">GtkTreeView</a>
+                                 +----IdolVideoList
+</pre>
+</div>
+<div class="refsect1" title="Implemented Interfaces">
+<a name="IdolVideoList.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+IdolVideoList implements
+ AtkImplementorIface and  <a href="http://library.mate.org/devel/gtk/unstable/GtkBuildable.html">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1" title="Properties">
+<a name="IdolVideoList.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="IdolVideoList.html#IdolVideoList--mrl-column" title='The "mrl-column" property'>mrl-column</a>"               <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write
+  "<a class="link" href="IdolVideoList.html#IdolVideoList--tooltip-column" title='The "tooltip-column" property'>tooltip-column</a>"           <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write
+  "<a class="link" href="IdolVideoList.html#IdolVideoList--idol" title='The "idol" property'>idol</a>"                    <a class="link" href="IdolObject.html" title="IdolObject"><span class="type">IdolObject</span></a>*          : Read / Write
+</pre>
+</div>
+<div class="refsect1" title="Signals">
+<a name="IdolVideoList.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="IdolVideoList.html#IdolVideoList-starting-video" title='The "starting-video" signal'>starting-video</a>"                                 : Run Last
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="IdolVideoList.description"></a><h2>Description</h2>
+<p>
+<a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a> is a <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeView.html"><span class="type">GtkTreeView</span></a> designed for listing videos by their thumbnails using <a class="link" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo"><span class="type">IdolCellRendererVideo</span></a>.
+It supports tooltips, loading the videos by activating tree view rows, and <a href="http://library.mate.org/devel/gtk/unstable/GtkUIManager.html"><span class="type">GtkUIManager</span></a> actions in the popup menu.
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="IdolVideoList.details"></a><h2>Details</h2>
+<div class="refsect2" title="IdolVideoList">
+<a name="IdolVideoList-struct"></a><h3>IdolVideoList</h3>
+<pre class="programlisting">typedef struct _IdolVideoList IdolVideoList;</pre>
+<p>
+All the fields in the <a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a> structure are private and should never be accessed directly.
+</p>
+</div>
+<hr>
+<div class="refsect2" title="IdolVideoListClass">
+<a name="IdolVideoListClass"></a><h3>IdolVideoListClass</h3>
+<pre class="programlisting">typedef struct {
+	GtkTreeViewClass parent;
+	gboolean (*starting_video) (IdolVideoList *video_list, GtkTreePath *path);
+} IdolVideoListClass;
+</pre>
+<p>
+The class structure for the <a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a> type.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><span class="type">GtkTreeViewClass</span> <em class="structfield"><code><a name="IdolVideoListClass.parent"></a>parent</code></em>;</span></p></td>
+<td>the parent class
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="structfield"><code><a name="IdolVideoListClass.starting-video"></a>starting_video</code></em> ()</span></p></td>
+<td>the generic signal handler for the <a class="link" href="IdolVideoList.html#IdolVideoList-starting-video" title='The "starting-video" signal'><span class="type">"starting-video"</span></a> signal,
+which can be overridden by inheriting classes
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="idol_video_list_new ()">
+<a name="idol-video-list-new"></a><h3>idol_video_list_new ()</h3>
+<pre class="programlisting"><a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="returnvalue">IdolVideoList</span></a> *    idol_video_list_new                (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+Creates a new <a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a> with default properties.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a new <a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="idol_video_list_get_ui_manager ()">
+<a name="idol-video-list-get-ui-manager"></a><h3>idol_video_list_get_ui_manager ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gtk/unstable/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *      idol_video_list_get_ui_manager     (<em class="parameter"><code><a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a> *self</code></em>);</pre>
+<p>
+Returns the <a href="http://library.mate.org/devel/gtk/unstable/GtkUIManager.html"><span class="type">GtkUIManager</span></a> in use by <em class="parameter"><code>self</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <em class="parameter"><code>self</code></em>'s <a href="http://library.mate.org/devel/gtk/unstable/GtkUIManager.html"><span class="type">GtkUIManager</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" title="Property Details">
+<a name="IdolVideoList.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" title='The "mrl-column" property'>
+<a name="IdolVideoList--mrl-column"></a><h3>The <code class="literal">"mrl-column"</code> property</h3>
+<pre class="programlisting">  "mrl-column"               <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write</pre>
+<p>
+The column number of the <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html"><span class="type">GtkTreeModel</span></a> column containing MRLs of the videos in the video list.
+If it's set to -1, video rows will not be activatable (e.g. by double-clicking them).
+</p>
+<p>Allowed values: &gt;= G_MAXULONG</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2" title='The "tooltip-column" property'>
+<a name="IdolVideoList--tooltip-column"></a><h3>The <code class="literal">"tooltip-column"</code> property</h3>
+<pre class="programlisting">  "tooltip-column"           <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write</pre>
+<p>
+The column number of the <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html"><span class="type">GtkTreeModel</span></a> column containing tooltips to be displayed by the video list.
+If it's set to -1, no tooltips shall be displayed.
+</p>
+<p>Allowed values: &gt;= G_MAXULONG</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2" title='The "idol" property'>
+<a name="IdolVideoList--idol"></a><h3>The <code class="literal">"idol"</code> property</h3>
+<pre class="programlisting">  "idol"                    <a class="link" href="IdolObject.html" title="IdolObject"><span class="type">IdolObject</span></a>*          : Read / Write</pre>
+<p>
+A <a class="link" href="IdolObject.html" title="IdolObject"><span class="type">IdolObject</span></a> for integration purposes.
+</p>
+</div>
+</div>
+<div class="refsect1" title="Signal Details">
+<a name="IdolVideoList.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2" title='The "starting-video" signal'>
+<a name="IdolVideoList-starting-video"></a><h3>The <code class="literal">"starting-video"</code> signal</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            user_function                      (<a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a> *video_list,
+                                                        <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>    *tree_path,
+                                                        <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)       : Run Last</pre>
+<p>
+The <a class="link" href="IdolVideoList.html#IdolVideoList-starting-video" title='The "starting-video" signal'><span class="type">"starting-video"</span></a> signal is emitted when a video row is activated, just before the video is
+added to the playlist. It allows for the video's MRL in the <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html"><span class="type">GtkTreeModel</span></a> to be modified, for example.
+</p>
+<p>
+If this returns <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, the video will be played; otherwise, it will not.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>video_list</code></em> :</span></p></td>
+<td>the <a class="link" href="IdolVideoList.html" title="IdolVideoList"><span class="type">IdolVideoList</span></a> which received the signal
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>tree_path</code></em> :</span></p></td>
+<td>the <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> of the video row about to be played
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" title="See Also">
+<a name="IdolVideoList.see-also"></a><h2>See Also</h2>
+<a class="link" href="IdolCellRendererVideo.html" title="IdolCellRendererVideo"><span class="type">IdolCellRendererVideo</span></a>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

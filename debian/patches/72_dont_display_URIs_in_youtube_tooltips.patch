@@ -1,0 +1,25 @@
+From: Omer Akram <om26er@ubuntu.com>
+Author: Philip Withnall <philip@tecnocode.co.uk>
+Subject: Don't display URIs in YouTube tooltips.
+Origin: http://git.mate.org/browse/idol/commit/?id=b4d4d139629fca931a9b24fb71d9c1301ef903e5
+Bug: https://bugs.mate.org/629548
+Bug-Ubuntu: https://launchpad.net/bugs/696171
+
+--- a/src/plugins/youtube/youtube.ui
++++ b/src/plugins/youtube/youtube.ui
+@@ -87,6 +87,7 @@
+ 									<property name="tooltip-column">1</property>
+ 									<property name="mrl-column">2</property>
+ 									<property name="model">yt_list_store_search</property>
++									<property name="show-tooltip-uri">False</property>
+ 									<signal name="starting-video" handler="starting_video_cb"/>
+ 									<child>
+ 										<object class="GtkTreeViewColumn" id="yt_treeview_search_column">
+@@ -133,6 +134,7 @@
+ 									<property name="tooltip-column">1</property>
+ 									<property name="mrl-column">2</property>
+ 									<property name="model">yt_list_store_related</property>
++									<property name="show-tooltip-uri">False</property>
+ 									<signal name="starting-video" handler="starting_video_cb"/>
+ 									<child>
+ 										<object class="GtkTreeViewColumn" id="yt_treeview_related_column">

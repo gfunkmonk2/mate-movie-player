@@ -1,0 +1,126 @@
+%%
+headers
+
+#include "config.h"
+
+#define NO_IMPORT_PYGOBJECT
+#include <pygobject.h>
+#include <pygtk/pygtk.h>
+
+#include "override_common.h"
+#include "idol.h"
+#include "idol-interface.h"
+#include "idol-cell-renderer-video.h"
+#include "idol-video-list.h"
+#include "idol-disc.h"
+#include "plugins/idol-plugin.h"
+
+void pyidol_register_classes (PyObject *d);
+void pyidol_add_constants (PyObject *module, const gchar *strip_prefix);
+
+%%
+modulename idol
+%%
+import gobject.GObject as PyGObject_Type
+import gtk.ActionGroup as PyGtkActionGroup_Type
+import gtk.Dialog as PyGtkDialog_Type
+import gtk.HBox as PyGtkHBox_Type
+import gtk.ScrolledWindow as PyGtkScrolledWindow_Type
+import gtk.TreeModel as PyGtkTreeModel_Type
+import gtk.TreeModelFilter as PyGtkTreeModelFilter_Type
+import gtk.TreeView as PyGtkTreeView_Type
+import gtk.TreeViewColumn as PyGtkTreeViewColumn_Type
+import gtk.UIManager as PyGtkUIManager_Type
+import gtk.VBox as PyGtkVBox_Type
+import gtk.Widget as PyGtkWidget_Type
+import gtk.Window as PyGtkWindow_Type
+import gtk.gdk.Pixbuf as PyGdkPixbuf_Type
+import gtk.ComboBox as PyGtkComboBox_Type
+import gtk.CellRenderer as PyGtkCellRenderer_Type
+%%
+ignore-glob
+  *_get_type
+  *_quark
+%%
+override idol_object_plugins_shutdown noargs
+static PyObject *
+_wrap_idol_object_plugins_shutdown (PyGObject *self)
+{
+	idol_object_plugins_shutdown ();
+
+	Py_INCREF (Py_None);
+	return Py_None;
+}
+%%
+override idol_action_error kwargs
+static PyObject *
+_wrap_idol_action_error (PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+	static char *kwlist[] = { "title", "reason", NULL };
+	char *title, *reason;
+
+	if (!PyArg_ParseTupleAndKeywords (args, kwargs,"ss:IdolObject.action_error", kwlist, &title, &reason))
+		return NULL;
+    
+	idol_action_error (title, reason, IDOL_OBJECT (self->obj));
+    
+	Py_INCREF (Py_None);
+	return Py_None;
+}
+%%
+override idol_interface_error_with_link kwargs
+static PyObject *
+_wrap_idol_interface_error_with_link (PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+	static char *kwlist[] = { "title", "reason", "uri", "label", "parent", NULL };
+	char *title, *reason, *uri, *label;
+	PyGObject *parent;
+
+	if (!PyArg_ParseTupleAndKeywords (args, kwargs, "ssssO!:IdolObject.interface_error_with_link", kwlist, &title, &reason, &uri, &label, &PyGtkWindow_Type, &parent))
+		return NULL;
+    
+	idol_interface_error_with_link (title, reason, uri, label, GTK_WINDOW(parent->obj), IDOL_OBJECT(self->obj));
+    
+	Py_INCREF (Py_None);
+	return Py_None;
+}
+%%
+override idol_plugin_load_interface kwargs
+static PyObject *
+_wrap_idol_plugin_load_interface (PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+	static char *kwlist[] = { "name", "fatal", "parent", "user_data", NULL };
+	char *name;
+	gboolean fatal;
+	GtkWindow *parent;
+	gpointer user_data;
+	GtkBuilder *builder;
+	PyObject *py_parent;
+
+	if (!PyArg_ParseTupleAndKeywords (args, kwargs,"sbOO:IdolPlugin.load_interface", kwlist, &name, &fatal, &py_parent, &user_data))
+		return NULL;
+	if (pygobject_check (py_parent, &PyGtkWindow_Type)) {
+		parent = GTK_WINDOW (pygobject_get (py_parent));
+	} else {
+		PyErr_SetString (PyExc_TypeError, "parent should be a GtkWindow");
+		return NULL;
+	}
+    
+	builder = idol_plugin_load_interface (IDOL_PLUGIN (self->obj), name, fatal, parent, user_data);
+    
+	return pygobject_new ((GObject *)builder);
+}
+%%
+override idol_get_version noargs
+static PyObject *
+_wrap_idol_get_version (PyGObject *self)
+{
+	PyObject *py_string;
+	char *version;
+
+	version = idol_get_version ();
+	py_string = PyString_FromString (version);
+	g_free (version);
+
+	return py_string;
+}

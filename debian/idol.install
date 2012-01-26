@@ -1,0 +1,6 @@
+debian/bug/control /usr/share/bug/idol/
+debian/tmp/usr/bin
+debian/tmp/usr/lib/mate-movie-player/idol
+debian/tmp/usr/lib/mate-movie-player/idol-plugin-viewer
+debian/tmp/usr/lib/caja
+debian/tmp/usr/share/applications

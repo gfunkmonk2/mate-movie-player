@@ -1,0 +1,616 @@
+<!-- ##### SECTION Title ##### -->
+IdolObject
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### TYPEDEF Idol ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT IdolObject ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL IdolObject::file-closed ##### -->
+<para>
+
+</para>
+
+@idolobject: the object which received the signal.
+
+<!-- ##### SIGNAL IdolObject::file-opened ##### -->
+<para>
+
+</para>
+
+@idolobject: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL IdolObject::metadata-updated ##### -->
+<para>
+
+</para>
+
+@idolobject: the object which received the signal.
+@arg1: 
+@arg2: 
+@arg3: 
+@arg4: 
+
+<!-- ##### ARG IdolObject:current-mrl ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolObject:current-time ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolObject:fullscreen ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolObject:playing ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolObject:seekable ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG IdolObject:stream-length ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT IdolObjectClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@file_opened: 
+@file_closed: 
+@metadata_updated: 
+
+<!-- ##### ENUM IdolRemoteCommand ##### -->
+<para>
+
+</para>
+
+@IDOL_REMOTE_COMMAND_UNKNOWN: 
+@IDOL_REMOTE_COMMAND_PLAY: 
+@IDOL_REMOTE_COMMAND_PAUSE: 
+@IDOL_REMOTE_COMMAND_STOP: 
+@IDOL_REMOTE_COMMAND_PLAYPAUSE: 
+@IDOL_REMOTE_COMMAND_NEXT: 
+@IDOL_REMOTE_COMMAND_PREVIOUS: 
+@IDOL_REMOTE_COMMAND_SEEK_FORWARD: 
+@IDOL_REMOTE_COMMAND_SEEK_BACKWARD: 
+@IDOL_REMOTE_COMMAND_VOLUME_UP: 
+@IDOL_REMOTE_COMMAND_VOLUME_DOWN: 
+@IDOL_REMOTE_COMMAND_FULLSCREEN: 
+@IDOL_REMOTE_COMMAND_QUIT: 
+@IDOL_REMOTE_COMMAND_ENQUEUE: 
+@IDOL_REMOTE_COMMAND_REPLACE: 
+@IDOL_REMOTE_COMMAND_SHOW: 
+@IDOL_REMOTE_COMMAND_TOGGLE_CONTROLS: 
+@IDOL_REMOTE_COMMAND_UP: 
+@IDOL_REMOTE_COMMAND_DOWN: 
+@IDOL_REMOTE_COMMAND_LEFT: 
+@IDOL_REMOTE_COMMAND_RIGHT: 
+@IDOL_REMOTE_COMMAND_SELECT: 
+@IDOL_REMOTE_COMMAND_DVD_MENU: 
+@IDOL_REMOTE_COMMAND_ZOOM_UP: 
+@IDOL_REMOTE_COMMAND_ZOOM_DOWN: 
+@IDOL_REMOTE_COMMAND_EJECT: 
+@IDOL_REMOTE_COMMAND_PLAY_DVD: 
+@IDOL_REMOTE_COMMAND_MUTE: 
+@IDOL_REMOTE_COMMAND_TOGGLE_ASPECT: 
+
+<!-- ##### ENUM IdolRemoteSetting ##### -->
+<para>
+
+</para>
+
+@IDOL_REMOTE_SETTING_SHUFFLE: 
+@IDOL_REMOTE_SETTING_REPEAT: 
+
+<!-- ##### MACRO IDOL_MATECONF_PREFIX ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION idol_object_plugins_init ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_object_plugins_shutdown ##### -->
+<para>
+
+</para>
+
+@void: 
+
+
+<!-- ##### FUNCTION idol_file_opened ##### -->
+<para>
+
+</para>
+
+@idol: 
+@mrl: 
+
+
+<!-- ##### FUNCTION idol_file_closed ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_metadata_updated ##### -->
+<para>
+
+</para>
+
+@idol: 
+@artist: 
+@title: 
+@album: 
+@track_num: 
+
+
+<!-- ##### FUNCTION idol_action_error ##### -->
+<para>
+
+</para>
+
+@title: 
+@reason: 
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_exit ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_add_to_playlist_and_play ##### -->
+<para>
+
+</para>
+
+@idol: 
+@uri: 
+@display_name: 
+@add_to_recent: 
+
+
+<!-- ##### FUNCTION idol_action_play ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_play_media ##### -->
+<para>
+
+</para>
+
+@idol: 
+@type: 
+@device: 
+
+
+<!-- ##### FUNCTION idol_action_play_media_device ##### -->
+<para>
+
+</para>
+
+@idol: 
+@device: 
+
+
+<!-- ##### FUNCTION idol_action_play_pause ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_pause ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_stop ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_fullscreen ##### -->
+<para>
+
+</para>
+
+@idol: 
+@state: 
+
+
+<!-- ##### FUNCTION idol_action_fullscreen_toggle ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_next ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_previous ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_next_angle ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_remote_get_setting ##### -->
+<para>
+
+</para>
+
+@idol: 
+@setting: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_action_remote_set_setting ##### -->
+<para>
+
+</para>
+
+@idol: 
+@setting: 
+@value: 
+
+
+<!-- ##### FUNCTION idol_action_seek_time ##### -->
+<para>
+
+</para>
+
+@idol: 
+@msec: 
+@accurate: 
+
+
+<!-- ##### FUNCTION idol_action_seek_relative ##### -->
+<para>
+
+</para>
+
+@idol: 
+@offset: 
+@accurate: 
+
+
+<!-- ##### FUNCTION idol_action_volume ##### -->
+<para>
+
+</para>
+
+@idol: 
+@volume: 
+
+
+<!-- ##### FUNCTION idol_action_volume_relative ##### -->
+<para>
+
+</para>
+
+@idol: 
+@off_pct: 
+
+
+<!-- ##### FUNCTION idol_action_volume_toggle_mute ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_toggle_aspect_ratio ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_get_aspect_ratio ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_action_set_aspect_ratio ##### -->
+<para>
+
+</para>
+
+@idol: 
+@ratio: 
+
+
+<!-- ##### FUNCTION idol_action_toggle_controls ##### -->
+<para>
+
+</para>
+
+@idol: 
+
+
+<!-- ##### FUNCTION idol_action_set_scale_ratio ##### -->
+<para>
+
+</para>
+
+@idol: 
+@ratio: 
+
+
+<!-- ##### FUNCTION idol_action_set_playlist_index ##### -->
+<para>
+
+</para>
+
+@idol: 
+@index: 
+
+
+<!-- ##### FUNCTION idol_action_remote ##### -->
+<para>
+
+</para>
+
+@idol: 
+@cmd: 
+@url: 
+
+
+<!-- ##### FUNCTION idol_is_fullscreen ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_is_playing ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_is_paused ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_is_seekable ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_main_window ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_ui_manager ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_video_widget ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_video_widget_backend_name ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_current_mrl ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_current_time ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_set_current_subtitle ##### -->
+<para>
+
+</para>
+
+@idol: 
+@subtitle_uri: 
+
+
+<!-- ##### FUNCTION idol_get_playlist_length ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_playlist_pos ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_title_at_playlist_pos ##### -->
+<para>
+
+</para>
+
+@idol: 
+@playlist_index: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_short_title ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_volume ##### -->
+<para>
+
+</para>
+
+@idol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_get_version ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_add_sidebar_page ##### -->
+<para>
+
+</para>
+
+@idol: 
+@page_id: 
+@title: 
+@main_widget: 
+
+
+<!-- ##### FUNCTION idol_remove_sidebar_page ##### -->
+<para>
+
+</para>
+
+@idol: 
+@page_id: 

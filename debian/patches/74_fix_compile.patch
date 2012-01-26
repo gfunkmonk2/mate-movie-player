@@ -1,0 +1,40 @@
+From: Omer Akram <om26er@ubuntu.com>
+Author: Bastien Nocera <hadess@hadess.net>
+Subject: Publish: Make it compile again.
+Origin: http://git.mate.org/browse/idol/commit/?h=mate-2-32&id=67c4c2e07b00487391ab8b906360d3f3f09e9b84
+Bug: https://bugs.mate.org/636686
+Bug-Ubuntu: https://launchpad.net/bugs/659001
+
+--- a/src/plugins/publish/idol-publish.c
++++ b/src/plugins/publish/idol-publish.c
+@@ -443,7 +443,7 @@ idol_publish_plugin_load_playlist (IdolPublishPlugin   *self,
+ 
+ 		/* Add the MRLs to the playlist asynchronously and in order */
+ 		if (mrl_list != NULL)
+-			idol_playlist_add_mrls (self->priv->idol->playlist, g_list_reverse (mrl_list), FALSE, NULL, NULL, NULL);
++			idol_playlist_add_mrls (self->idol->playlist, g_list_reverse (mrl_list), FALSE, NULL, NULL, NULL);
+ 	}
+ 
+ out:
+--
+cgit v0.8.3.4
+From: Omer Akram <om26er@ubuntu.com>
+Author: Bastien Nocera <hadess@hadess.net>
+Subject: Publish: Make it compile again.
+Origin: http://git.mate.org/browse/idol/commit/?h=mate-2-32&id=67c4c2e07b00487391ab8b906360d3f3f09e9b84
+Bug: https://bugs.mate.org/636686
+Bug-Ubuntu: https://launchpad.net/bugs/659001
+
+--- a/src/plugins/publish/idol-publish.c
++++ b/src/plugins/publish/idol-publish.c
+@@ -443,7 +443,7 @@ idol_publish_plugin_load_playlist (IdolPublishPlugin   *self,
+ 
+ 		/* Add the MRLs to the playlist asynchronously and in order */
+ 		if (mrl_list != NULL)
+-			idol_playlist_add_mrls (self->priv->idol->playlist, g_list_reverse (mrl_list), FALSE, NULL, NULL, NULL);
++			idol_playlist_add_mrls (self->idol->playlist, g_list_reverse (mrl_list), FALSE, NULL, NULL, NULL);
+ 	}
+ 
+ out:
+--
+cgit v0.8.3.4

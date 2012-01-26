@@ -1,0 +1,10 @@
+debian/source_idol.py usr/share/apport/package-hooks
+debian/idol.xpm usr/share/pixmaps
+debian/tmp/usr/share/locale
+debian/tmp/usr/share/mate
+debian/tmp/usr/share/man
+debian/tmp/usr/share/icons
+debian/tmp/usr/share/omf
+debian/tmp/usr/share/gtk-doc
+debian/tmp/usr/share/idol
+debian/tmp/etc/mateconf

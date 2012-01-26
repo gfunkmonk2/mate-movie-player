@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Idol Reference Manual" link="index.html" author="" name="idol">
+  <chapters>
+    <sub name="Tutorials" link="tutorials.html">
+      <sub name="Writing Idol Plugins" link="idol-plugins.html"/>
+    </sub>
+    <sub name="Core API" link="core-api.html">
+      <sub name="IdolObject" link="IdolObject.html"/>
+      <sub name="Interface" link="idol-Interface.html"/>
+      <sub name="IdolPlugin" link="IdolPlugin.html"/>
+      <sub name="BaconVideoWidget" link="BaconVideoWidget.html"/>
+    </sub>
+    <sub name="Widgets" link="widget-api.html">
+      <sub name="IdolVideoList" link="IdolVideoList.html"/>
+      <sub name="IdolCellRendererVideo" link="IdolCellRendererVideo.html"/>
+    </sub>
+    <sub name="Index of all symbols" link="api-index-full.html"/>
+    <sub name="Index of new symbols in 2.18" link="ix02.html"/>
+    <sub name="Index of new symbols in 2.90.0" link="ix03.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprecated.html"/>
+    <sub name="Annotation glossary" link="annotation-glossary.html">
+      <sub name="Annotation Glossary" link="annotation-glossary.html#annotation-glossary"/>
+    </sub>
+  </chapters>
+  <functions>
+    <function name="Locations" link="idol-plugins.html#id342247"/>
+    <function name="The .idol-plugin File" link="idol-plugins.html#id335895"/>
+    <function name="Writing a Plugin" link="idol-plugins.html#id352839"/>
+    <function name="Idol" link="IdolObject.html#Idol"/>
+    <function name="IdolObject" link="IdolObject.html#IdolObject-struct"/>
+    <function name="IdolObjectClass" link="IdolObject.html#IdolObjectClass"/>
+    <function name="enum IdolRemoteCommand" link="IdolObject.html#IdolRemoteCommand"/>
+    <function name="enum IdolRemoteSetting" link="IdolObject.html#IdolRemoteSetting"/>
+    <function name="IDOL_MATECONF_PREFIX" link="IdolObject.html#IDOL-MATECONF-PREFIX:CAPS"/>
+    <function name="idol_object_plugins_init ()" link="IdolObject.html#idol-object-plugins-init"/>
+    <function name="idol_object_plugins_shutdown ()" link="IdolObject.html#idol-object-plugins-shutdown"/>
+    <function name="idol_file_opened ()" link="IdolObject.html#idol-file-opened"/>
+    <function name="idol_file_closed ()" link="IdolObject.html#idol-file-closed"/>
+    <function name="idol_metadata_updated ()" link="IdolObject.html#idol-metadata-updated"/>
+    <function name="idol_action_error ()" link="IdolObject.html#idol-action-error"/>
+    <function name="idol_action_exit ()" link="IdolObject.html#idol-action-exit"/>
+    <function name="idol_add_to_playlist_and_play ()" link="IdolObject.html#idol-add-to-playlist-and-play"/>
+    <function name="idol_action_play ()" link="IdolObject.html#idol-action-play"/>
+    <function name="idol_action_play_media ()" link="IdolObject.html#idol-action-play-media"/>
+    <function name="idol_action_play_media_device ()" link="IdolObject.html#idol-action-play-media-device"/>
+    <function name="idol_action_play_pause ()" link="IdolObject.html#idol-action-play-pause"/>
+    <function name="idol_action_pause ()" link="IdolObject.html#idol-action-pause"/>
+    <function name="idol_action_stop ()" link="IdolObject.html#idol-action-stop"/>
+    <function name="idol_action_fullscreen ()" link="IdolObject.html#idol-action-fullscreen"/>
+    <function name="idol_action_fullscreen_toggle ()" link="IdolObject.html#idol-action-fullscreen-toggle"/>
+    <function name="idol_action_next ()" link="IdolObject.html#idol-action-next"/>
+    <function name="idol_action_previous ()" link="IdolObject.html#idol-action-previous"/>
+    <function name="idol_action_next_angle ()" link="IdolObject.html#idol-action-next-angle"/>
+    <function name="idol_action_remote_get_setting ()" link="IdolObject.html#idol-action-remote-get-setting"/>
+    <function name="idol_action_remote_set_setting ()" link="IdolObject.html#idol-action-remote-set-setting"/>
+    <function name="idol_action_seek_time ()" link="IdolObject.html#idol-action-seek-time"/>
+    <function name="idol_action_seek_relative ()" link="IdolObject.html#idol-action-seek-relative"/>
+    <function name="idol_action_volume ()" link="IdolObject.html#idol-action-volume"/>
+    <function name="idol_action_volume_relative ()" link="IdolObject.html#idol-action-volume-relative"/>
+    <function name="idol_action_volume_toggle_mute ()" link="IdolObject.html#idol-action-volume-toggle-mute"/>
+    <function name="idol_action_toggle_aspect_ratio ()" link="IdolObject.html#idol-action-toggle-aspect-ratio"/>
+    <function name="idol_action_get_aspect_ratio ()" link="IdolObject.html#idol-action-get-aspect-ratio"/>
+    <function name="idol_action_set_aspect_ratio ()" link="IdolObject.html#idol-action-set-aspect-ratio"/>
+    <function name="idol_action_toggle_controls ()" link="IdolObject.html#idol-action-toggle-controls"/>
+    <function name="idol_action_set_scale_ratio ()" link="IdolObject.html#idol-action-set-scale-ratio"/>
+    <function name="idol_action_set_playlist_index ()" link="IdolObject.html#idol-action-set-playlist-index"/>
+    <function name="idol_action_remote ()" link="IdolObject.html#idol-action-remote"/>
+    <function name="idol_is_fullscreen ()" link="IdolObject.html#idol-is-fullscreen"/>
+    <function name="idol_is_playing ()" link="IdolObject.html#idol-is-playing"/>
+    <function name="idol_is_paused ()" link="IdolObject.html#idol-is-paused"/>
+    <function name="idol_is_seekable ()" link="IdolObject.html#idol-is-seekable"/>
+    <function name="idol_get_main_window ()" link="IdolObject.html#idol-get-main-window"/>
+    <function name="idol_get_ui_manager ()" link="IdolObject.html#idol-get-ui-manager"/>
+    <function name="idol_get_video_widget ()" link="IdolObject.html#idol-get-video-widget"/>
+    <function name="idol_get_video_widget_backend_name ()" link="IdolObject.html#idol-get-video-widget-backend-name"/>
+    <function name="idol_get_current_mrl ()" link="IdolObject.html#idol-get-current-mrl"/>
+    <function name="idol_get_current_time ()" link="IdolObject.html#idol-get-current-time"/>
+    <function name="idol_set_current_subtitle ()" link="IdolObject.html#idol-set-current-subtitle"/>
+    <function name="idol_get_playlist_length ()" link="IdolObject.html#idol-get-playlist-length"/>
+    <function name="idol_get_playlist_pos ()" link="IdolObject.html#idol-get-playlist-pos"/>
+    <function name="idol_get_title_at_playlist_pos ()" link="IdolObject.html#idol-get-title-at-playlist-pos"/>
+    <function name="idol_get_short_title ()" link="IdolObject.html#idol-get-short-title"/>
+    <function name="idol_get_volume ()" link="IdolObject.html#idol-get-volume"/>
+    <function name="idol_get_version ()" link="IdolObject.html#idol-get-version"/>
+    <function name="idol_add_sidebar_page ()" link="IdolObject.html#idol-add-sidebar-page"/>
+    <function name="idol_remove_sidebar_page ()" link="IdolObject.html#idol-remove-sidebar-page"/>
+    <function name="The &quot;current-mrl&quot; property" link="IdolObject.html#IdolObject--current-mrl"/>
+    <function name="The &quot;current-time&quot; property" link="IdolObject.html#IdolObject--current-time"/>
+    <function name="The &quot;fullscreen&quot; property" link="IdolObject.html#IdolObject--fullscreen"/>
+    <function name="The &quot;playing&quot; property" link="IdolObject.html#IdolObject--playing"/>
+    <function name="The &quot;seekable&quot; property" link="IdolObject.html#IdolObject--seekable"/>
+    <function name="The &quot;stream-length&quot; property" link="IdolObject.html#IdolObject--stream-length"/>
+    <function name="The &quot;file-closed&quot; signal" link="IdolObject.html#IdolObject-file-closed"/>
+    <function name="The &quot;file-opened&quot; signal" link="IdolObject.html#IdolObject-file-opened"/>
+    <function name="The &quot;metadata-updated&quot; signal" link="IdolObject.html#IdolObject-metadata-updated"/>
+    <function name="idol_interface_error ()" link="idol-Interface.html#idol-interface-error"/>
+    <function name="idol_interface_error_blocking ()" link="idol-Interface.html#idol-interface-error-blocking"/>
+    <function name="idol_interface_error_with_link ()" link="idol-Interface.html#idol-interface-error-with-link"/>
+    <function name="IdolPlugin" link="IdolPlugin.html#IdolPlugin-struct"/>
+    <function name="IdolPluginClass" link="IdolPlugin.html#IdolPluginClass"/>
+    <function name="enum IdolPluginError" link="IdolPlugin.html#IdolPluginError"/>
+    <function name="IdolPluginActivationFunc ()" link="IdolPlugin.html#IdolPluginActivationFunc"/>
+    <function name="IdolPluginDeactivationFunc ()" link="IdolPlugin.html#IdolPluginDeactivationFunc"/>
+    <function name="IdolPluginWidgetFunc ()" link="IdolPlugin.html#IdolPluginWidgetFunc"/>
+    <function name="IDOL_PLUGIN_DEFINE_TYPE()" link="IdolPlugin.html#IDOL-PLUGIN-DEFINE-TYPE:CAPS"/>
+    <function name="IDOL_PLUGIN_REGISTER()" link="IdolPlugin.html#IDOL-PLUGIN-REGISTER:CAPS"/>
+    <function name="IDOL_PLUGIN_REGISTER_EXTENDED()" link="IdolPlugin.html#IDOL-PLUGIN-REGISTER-EXTENDED:CAPS"/>
+    <function name="IDOL_PLUGIN_REGISTER_TYPE()" link="IdolPlugin.html#IDOL-PLUGIN-REGISTER-TYPE:CAPS"/>
+    <function name="idol_plugin_activate ()" link="IdolPlugin.html#idol-plugin-activate"/>
+    <function name="idol_plugin_deactivate ()" link="IdolPlugin.html#idol-plugin-deactivate"/>
+    <function name="idol_plugin_create_configure_dialog ()" link="IdolPlugin.html#idol-plugin-create-configure-dialog"/>
+    <function name="idol_plugin_is_configurable ()" link="IdolPlugin.html#idol-plugin-is-configurable"/>
+    <function name="idol_plugin_load_interface ()" link="IdolPlugin.html#idol-plugin-load-interface"/>
+    <function name="idol_plugin_find_file ()" link="IdolPlugin.html#idol-plugin-find-file"/>
+    <function name="The &quot;name&quot; property" link="IdolPlugin.html#IdolPlugin--name"/>
+    <function name="BaconVideoWidget" link="BaconVideoWidget.html#BaconVideoWidget-struct"/>
+    <function name="BaconVideoWidgetClass" link="BaconVideoWidget.html#BaconVideoWidgetClass"/>
+    <function name="enum BvwAspectRatio" link="BaconVideoWidget.html#BvwAspectRatio"/>
+    <function name="enum BvwAudioOutType" link="BaconVideoWidget.html#BvwAudioOutType"/>
+    <function name="enum BvwDVDEvent" link="BaconVideoWidget.html#BvwDVDEvent"/>
+    <function name="enum BvwMetadataType" link="BaconVideoWidget.html#BvwMetadataType"/>
+    <function name="enum BvwVisualsQuality" link="BaconVideoWidget.html#BvwVisualsQuality"/>
+    <function name="enum BvwVideoProperty" link="BaconVideoWidget.html#BvwVideoProperty"/>
+    <function name="enum BvwError" link="BaconVideoWidget.html#BvwError"/>
+    <function name="enum BvwUseType" link="BaconVideoWidget.html#BvwUseType"/>
+    <function name="bacon_video_widget_new ()" link="BaconVideoWidget.html#bacon-video-widget-new"/>
+    <function name="bacon_video_widget_init_backend ()" link="BaconVideoWidget.html#bacon-video-widget-init-backend"/>
+    <function name="bacon_video_widget_open ()" link="BaconVideoWidget.html#bacon-video-widget-open"/>
+    <function name="bacon_video_widget_play ()" link="BaconVideoWidget.html#bacon-video-widget-play"/>
+    <function name="bacon_video_widget_pause ()" link="BaconVideoWidget.html#bacon-video-widget-pause"/>
+    <function name="bacon_video_widget_seek ()" link="BaconVideoWidget.html#bacon-video-widget-seek"/>
+    <function name="bacon_video_widget_seek_time ()" link="BaconVideoWidget.html#bacon-video-widget-seek-time"/>
+    <function name="bacon_video_widget_stop ()" link="BaconVideoWidget.html#bacon-video-widget-stop"/>
+    <function name="bacon_video_widget_close ()" link="BaconVideoWidget.html#bacon-video-widget-close"/>
+    <function name="bacon_video_widget_can_direct_seek ()" link="BaconVideoWidget.html#bacon-video-widget-can-direct-seek"/>
+    <function name="bacon_video_widget_can_get_frames ()" link="BaconVideoWidget.html#bacon-video-widget-can-get-frames"/>
+    <function name="bacon_video_widget_can_set_volume ()" link="BaconVideoWidget.html#bacon-video-widget-can-set-volume"/>
+    <function name="bacon_video_widget_dvd_event ()" link="BaconVideoWidget.html#bacon-video-widget-dvd-event"/>
+    <function name="bacon_video_widget_has_menus ()" link="BaconVideoWidget.html#bacon-video-widget-has-menus"/>
+    <function name="bacon_video_widget_get_aspect_ratio ()" link="BaconVideoWidget.html#bacon-video-widget-get-aspect-ratio"/>
+    <function name="bacon_video_widget_set_aspect_ratio ()" link="BaconVideoWidget.html#bacon-video-widget-set-aspect-ratio"/>
+    <function name="bacon_video_widget_get_audio_out_type ()" link="BaconVideoWidget.html#bacon-video-widget-get-audio-out-type"/>
+    <function name="bacon_video_widget_set_audio_out_type ()" link="BaconVideoWidget.html#bacon-video-widget-set-audio-out-type"/>
+    <function name="bacon_video_widget_get_auto_resize ()" link="BaconVideoWidget.html#bacon-video-widget-get-auto-resize"/>
+    <function name="bacon_video_widget_set_auto_resize ()" link="BaconVideoWidget.html#bacon-video-widget-set-auto-resize"/>
+    <function name="bacon_video_widget_get_backend_name ()" link="BaconVideoWidget.html#bacon-video-widget-get-backend-name"/>
+    <function name="bacon_video_widget_get_connection_speed ()" link="BaconVideoWidget.html#bacon-video-widget-get-connection-speed"/>
+    <function name="bacon_video_widget_set_connection_speed ()" link="BaconVideoWidget.html#bacon-video-widget-set-connection-speed"/>
+    <function name="bacon_video_widget_get_current_frame ()" link="BaconVideoWidget.html#bacon-video-widget-get-current-frame"/>
+    <function name="bacon_video_widget_get_current_time ()" link="BaconVideoWidget.html#bacon-video-widget-get-current-time"/>
+    <function name="bacon_video_widget_get_deinterlacing ()" link="BaconVideoWidget.html#bacon-video-widget-get-deinterlacing"/>
+    <function name="bacon_video_widget_set_deinterlacing ()" link="BaconVideoWidget.html#bacon-video-widget-set-deinterlacing"/>
+    <function name="bacon_video_widget_set_fullscreen ()" link="BaconVideoWidget.html#bacon-video-widget-set-fullscreen"/>
+    <function name="bacon_video_widget_get_languages ()" link="BaconVideoWidget.html#bacon-video-widget-get-languages"/>
+    <function name="bacon_video_widget_get_language ()" link="BaconVideoWidget.html#bacon-video-widget-get-language"/>
+    <function name="bacon_video_widget_set_language ()" link="BaconVideoWidget.html#bacon-video-widget-set-language"/>
+    <function name="bacon_video_widget_set_logo ()" link="BaconVideoWidget.html#bacon-video-widget-set-logo"/>
+    <function name="bacon_video_widget_get_logo_mode ()" link="BaconVideoWidget.html#bacon-video-widget-get-logo-mode"/>
+    <function name="bacon_video_widget_set_logo_mode ()" link="BaconVideoWidget.html#bacon-video-widget-set-logo-mode"/>
+    <function name="bacon_video_widget_get_metadata ()" link="BaconVideoWidget.html#bacon-video-widget-get-metadata"/>
+    <function name="bacon_video_widget_get_mrls ()" link="BaconVideoWidget.html#bacon-video-widget-get-mrls"/>
+    <function name="bacon_video_widget_get_option_group ()" link="BaconVideoWidget.html#bacon-video-widget-get-option-group"/>
+    <function name="bacon_video_widget_get_position ()" link="BaconVideoWidget.html#bacon-video-widget-get-position"/>
+    <function name="bacon_video_widget_set_referrer ()" link="BaconVideoWidget.html#bacon-video-widget-set-referrer"/>
+    <function name="bacon_video_widget_set_scale_ratio ()" link="BaconVideoWidget.html#bacon-video-widget-set-scale-ratio"/>
+    <function name="bacon_video_widget_get_show_cursor ()" link="BaconVideoWidget.html#bacon-video-widget-get-show-cursor"/>
+    <function name="bacon_video_widget_set_show_cursor ()" link="BaconVideoWidget.html#bacon-video-widget-set-show-cursor"/>
+    <function name="bacon_video_widget_set_show_visuals ()" link="BaconVideoWidget.html#bacon-video-widget-set-show-visuals"/>
+    <function name="bacon_video_widget_get_stream_length ()" link="BaconVideoWidget.html#bacon-video-widget-get-stream-length"/>
+    <function name="bacon_video_widget_get_subtitles ()" link="BaconVideoWidget.html#bacon-video-widget-get-subtitles"/>
+    <function name="bacon_video_widget_get_subtitle ()" link="BaconVideoWidget.html#bacon-video-widget-get-subtitle"/>
+    <function name="bacon_video_widget_set_subtitle ()" link="BaconVideoWidget.html#bacon-video-widget-set-subtitle"/>
+    <function name="bacon_video_widget_set_subtitle_encoding ()" link="BaconVideoWidget.html#bacon-video-widget-set-subtitle-encoding"/>
+    <function name="bacon_video_widget_set_subtitle_font ()" link="BaconVideoWidget.html#bacon-video-widget-set-subtitle-font"/>
+    <function name="bacon_video_widget_set_user_agent ()" link="BaconVideoWidget.html#bacon-video-widget-set-user-agent"/>
+    <function name="bacon_video_widget_get_video_property ()" link="BaconVideoWidget.html#bacon-video-widget-get-video-property"/>
+    <function name="bacon_video_widget_set_video_property ()" link="BaconVideoWidget.html#bacon-video-widget-set-video-property"/>
+    <function name="bacon_video_widget_get_visuals_list ()" link="BaconVideoWidget.html#bacon-video-widget-get-visuals-list"/>
+    <function name="bacon_video_widget_set_visuals ()" link="BaconVideoWidget.html#bacon-video-widget-set-visuals"/>
+    <function name="bacon_video_widget_set_visuals_quality ()" link="BaconVideoWidget.html#bacon-video-widget-set-visuals-quality"/>
+    <function name="bacon_video_widget_get_volume ()" link="BaconVideoWidget.html#bacon-video-widget-get-volume"/>
+    <function name="bacon_video_widget_set_volume ()" link="BaconVideoWidget.html#bacon-video-widget-set-volume"/>
+    <function name="bacon_video_widget_get_zoom ()" link="BaconVideoWidget.html#bacon-video-widget-get-zoom"/>
+    <function name="bacon_video_widget_set_zoom ()" link="BaconVideoWidget.html#bacon-video-widget-set-zoom"/>
+    <function name="bacon_video_widget_has_next_track ()" link="BaconVideoWidget.html#bacon-video-widget-has-next-track"/>
+    <function name="bacon_video_widget_has_previous_track ()" link="BaconVideoWidget.html#bacon-video-widget-has-previous-track"/>
+    <function name="bacon_video_widget_is_playing ()" link="BaconVideoWidget.html#bacon-video-widget-is-playing"/>
+    <function name="bacon_video_widget_is_seekable ()" link="BaconVideoWidget.html#bacon-video-widget-is-seekable"/>
+    <function name="bacon_video_widget_step ()" link="BaconVideoWidget.html#bacon-video-widget-step"/>
+    <function name="The &quot;download-filename&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--download-filename"/>
+    <function name="The &quot;logo-mode&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--logo-mode"/>
+    <function name="The &quot;playing&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--playing"/>
+    <function name="The &quot;position&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--position"/>
+    <function name="The &quot;referrer&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--referrer"/>
+    <function name="The &quot;seekable&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--seekable"/>
+    <function name="The &quot;show-cursor&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--show-cursor"/>
+    <function name="The &quot;show-visuals&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--show-visuals"/>
+    <function name="The &quot;stream-length&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--stream-length"/>
+    <function name="The &quot;user-agent&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--user-agent"/>
+    <function name="The &quot;volume&quot; property" link="BaconVideoWidget.html#BaconVideoWidget--volume"/>
+    <function name="The &quot;buffering&quot; signal" link="BaconVideoWidget.html#BaconVideoWidget-buffering"/>
+    <function name="The &quot;channels-change&quot; signal" link="BaconVideoWidget.html#BaconVideoWidget-channels-change"/>
+    <function name="The &quot;download-buffering&quot; signal" link="BaconVideoWidget.html#BaconVideoWidget-download-buffering"/>
+    <function name="The &quot;eos&quot; signal" link="BaconVideoWidget.html#BaconVideoWidget-eos"/>
+    <function name="The &quot;error&quot; signal" link="BaconVideoWidget.html#BaconVideoWidget-error"/>
+    <function name="The &quot;got-metadata&quot; signal" link="BaconVideoWidget.html#BaconVideoWidget-got-metadata"/>
+    <function name="The &quot;got-redirect&quot; signal" link="BaconVideoWidget.html#BaconVideoWidget-got-redirect"/>
+    <function name="The &quot;missing-plugins&quot; signal" link="BaconVideoWidget.html#BaconVideoWidget-missing-plugins"/>
+    <function name="The &quot;tick&quot; signal" link="BaconVideoWidget.html#BaconVideoWidget-tick"/>
+    <function name="IdolVideoList" link="IdolVideoList.html#IdolVideoList-struct"/>
+    <function name="IdolVideoListClass" link="IdolVideoList.html#IdolVideoListClass"/>
+    <function name="idol_video_list_new ()" link="IdolVideoList.html#idol-video-list-new"/>
+    <function name="idol_video_list_get_ui_manager ()" link="IdolVideoList.html#idol-video-list-get-ui-manager"/>
+    <function name="The &quot;mrl-column&quot; property" link="IdolVideoList.html#IdolVideoList--mrl-column"/>
+    <function name="The &quot;tooltip-column&quot; property" link="IdolVideoList.html#IdolVideoList--tooltip-column"/>
+    <function name="The &quot;idol&quot; property" link="IdolVideoList.html#IdolVideoList--idol"/>
+    <function name="The &quot;starting-video&quot; signal" link="IdolVideoList.html#IdolVideoList-starting-video"/>
+    <function name="IdolCellRendererVideo" link="IdolCellRendererVideo.html#IdolCellRendererVideo-struct"/>
+    <function name="IdolCellRendererVideoClass" link="IdolCellRendererVideo.html#IdolCellRendererVideoClass"/>
+    <function name="idol_cell_renderer_video_new ()" link="IdolCellRendererVideo.html#idol-cell-renderer-video-new"/>
+    <function name="The &quot;alignment&quot; property" link="IdolCellRendererVideo.html#IdolCellRendererVideo--alignment"/>
+    <function name="The &quot;thumbnail&quot; property" link="IdolCellRendererVideo.html#IdolCellRendererVideo--thumbnail"/>
+    <function name="The &quot;title&quot; property" link="IdolCellRendererVideo.html#IdolCellRendererVideo--title"/>
+    <function name="The &quot;use-placeholder&quot; property" link="IdolCellRendererVideo.html#IdolCellRendererVideo--use-placeholder"/>
+  </functions>
+</book>

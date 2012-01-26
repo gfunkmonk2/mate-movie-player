@@ -1,0 +1,6 @@
+?package(idol):\
+needs="X11"\
+section="Applications/Video"\
+title="Idol"\
+icon="/usr/share/pixmaps/idol.xpm"\
+command="/usr/bin/idol"

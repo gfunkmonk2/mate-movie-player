@@ -1,0 +1,1589 @@
+# translation of idol.HEAD.po to Walloon
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER.
+# Pablo Saratxaga <pablo@walon.org>, 2004, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: idol\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-04-01 21:00+0200\n"
+"PO-Revision-Date: 2005-04-25 11:23+0200\n"
+"Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
+"Language-Team: Walloon <linux-wa@walon.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: data/playlist.glade.h:1 src/idol-playlist.c:1511
+msgid "Playlist"
+msgstr "Djivêye a djouwer"
+
+#: data/playlist.glade.h:2
+msgid "Repeat _mode"
+msgstr ""
+
+#: data/playlist.glade.h:3
+msgid "Shuf_fle mode"
+msgstr ""
+
+#: data/playlist.glade.h:4
+msgid "_Add..."
+msgstr "_Radjouter..."
+
+#: data/playlist.glade.h:5
+msgid "_Copy Location"
+msgstr "_Copyî eplaeçmint"
+
+#: data/playlist.glade.h:6
+msgid "_Save..."
+msgstr "_Schaper..."
+
+#: data/popup.glade.h:1 data/idol.glade.h:48
+msgid "Next chapter or movie"
+msgstr "Tchaptrê ou fîme shuvant"
+
+#: data/popup.glade.h:2 data/idol.glade.h:53
+msgid "Play / Pa_use"
+msgstr "Djouwer / D_joker"
+
+#: data/popup.glade.h:3 data/idol.glade.h:56
+msgid "Play or pause the movie"
+msgstr "Djouwer ou djoker l' fîme"
+
+#: data/popup.glade.h:4 data/idol.glade.h:59
+msgid "Previous chapter or movie"
+msgstr "Tchaptrê ou fîme di dvant"
+
+#: data/popup.glade.h:5 data/idol.glade.h:75
+msgid "Show _Controls"
+msgstr ""
+
+#: data/popup.glade.h:6 data/idol.glade.h:77
+msgid "Show controls"
+msgstr ""
+
+#: data/popup.glade.h:7 data/idol.glade.h:81
+msgid "Skip _Backwards"
+msgstr ""
+
+#: data/popup.glade.h:8 data/idol.glade.h:82
+msgid "Skip _Forward"
+msgstr ""
+
+#: data/popup.glade.h:9 data/idol.glade.h:83
+msgid "Skip backwards"
+msgstr ""
+
+#: data/popup.glade.h:10 data/idol.glade.h:84
+msgid "Skip forward"
+msgstr ""
+
+#: data/popup.glade.h:11 data/idol.glade.h:107
+msgid "Volume _Down"
+msgstr ""
+
+#: data/popup.glade.h:12 data/idol.glade.h:108
+msgid "Volume _Up"
+msgstr ""
+
+#: data/popup.glade.h:13 data/idol.glade.h:110
+msgid "Volume up"
+msgstr ""
+
+#: data/popup.glade.h:14 data/idol.glade.h:133
+msgid "_Next Chapter/Movie"
+msgstr "Tchaptrê/fîme _shuvant"
+
+#: data/popup.glade.h:15 data/idol.glade.h:136
+msgid "_Previous Chapter/Movie"
+msgstr "Tchaptrê/fîme di _dvant"
+
+#: data/properties.glade.h:1 data/screenshot.glade.h:1 data/idol.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: data/properties.glade.h:2 src/bacon-video-widget-properties.c:109
+msgid "0 frames per second"
+msgstr "0 cådes pa segonde"
+
+#. Bitrate
+#: data/properties.glade.h:3 src/bacon-video-widget-properties.c:111
+msgid "0 kbps"
+msgstr "0 kb/s"
+
+#. 0 seconds
+#: data/properties.glade.h:4 data/skip_to.glade.h:1 src/video-utils.c:310
+msgid "0 seconds"
+msgstr "0 segondes"
+
+#. Dimensions
+#: data/properties.glade.h:5 src/bacon-video-widget-properties.c:104
+msgid "0 x 0"
+msgstr "0 x 0"
+
+#: data/properties.glade.h:6
+msgid "<b>Audio</b>"
+msgstr "<b>Odio</b>"
+
+#: data/properties.glade.h:7
+msgid "<b>General</b>"
+msgstr "<b>Djenerå</b>"
+
+#: data/properties.glade.h:8
+msgid "<b>Video</b>"
+msgstr "<b>Videyo</b>"
+
+#: data/properties.glade.h:9
+msgid "Album:"
+msgstr "Albom:"
+
+#: data/properties.glade.h:10
+msgid "Artist:"
+msgstr "Årtisse:"
+
+#: data/properties.glade.h:11
+msgid "Bitrate:"
+msgstr ""
+
+#: data/properties.glade.h:12
+msgid "Codec:"
+msgstr ""
+
+#: data/properties.glade.h:13
+msgid "Dimensions:"
+msgstr ""
+
+#: data/properties.glade.h:14
+msgid "Duration:"
+msgstr ""
+
+#: data/properties.glade.h:15
+msgid "Framerate:"
+msgstr ""
+
+#. Video Codec
+#. Audio Codec
+#: data/properties.glade.h:16 src/bacon-video-widget-properties.c:106
+#: src/bacon-video-widget-properties.c:113
+#: src/bacon-video-widget-properties.c:194
+#: src/bacon-video-widget-properties.c:232
+msgid "N/A"
+msgstr ""
+
+#: data/properties.glade.h:17 src/idol.c:2004
+msgid "Properties"
+msgstr "Prôpietés"
+
+#: data/properties.glade.h:18
+msgid "Title:"
+msgstr "Tite:"
+
+#. Title
+#. Artist
+#. Album
+#. Year
+#: data/properties.glade.h:19 src/bacon-video-widget-properties.c:94
+#: src/bacon-video-widget-properties.c:96
+#: src/bacon-video-widget-properties.c:98
+#: src/bacon-video-widget-properties.c:100
+#: src/bacon-video-widget-properties.c:132
+#: src/bacon-video-widget-properties.c:139
+#: src/bacon-video-widget-properties.c:146
+#: src/bacon-video-widget-properties.c:153
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: data/properties.glade.h:20
+msgid "Year:"
+msgstr "Anêye:"
+
+#: data/screenshot.glade.h:2 data/uri.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: data/screenshot.glade.h:3
+msgid "<b>Preview</b>"
+msgstr "<b>Vey divant</b>"
+
+#: data/screenshot.glade.h:4 src/idol-screenshot.c:346
+msgid "Save Screenshot"
+msgstr "Schaper l' waitroûlêye"
+
+#: data/screenshot.glade.h:5
+msgid "Save screenshot"
+msgstr "Schaper l' waitroûlêye"
+
+#: data/screenshot.glade.h:6
+msgid "Save screenshot to _desktop"
+msgstr "Schaper l' waitroûlêye el _sicribanne:"
+
+#: data/screenshot.glade.h:7
+msgid "Save screenshot to _file:"
+msgstr "Schaper l' waitroûlêye el _fitchî:"
+
+#: data/skip_to.glade.h:2 src/idol-skipto.c:140
+msgid "Skip to"
+msgstr ""
+
+#: data/skip_to.glade.h:3
+msgid "_Skip to:"
+msgstr ""
+
+#: data/skip_to.glade.h:4
+msgid "seconds"
+msgstr "segondes"
+
+#: data/idol.desktop.in.in.in.h:1
+msgid "Play movies and songs"
+msgstr "Djouwer des videyos et des tchansons"
+
+#. Title
+#: data/idol.desktop.in.in.in.h:2 data/idol.glade.h:102 src/idol.c:582
+#: src/idol.c:3423 src/idol.c:3440
+msgid "Idol Movie Player"
+msgstr "Djouweu videyo Idol"
+
+#: data/idol.glade.h:2
+msgid ""
+"14.4 Kbps Modem\n"
+"19.2 Kbps Modem\n"
+"28.8 Kbps Modem\n"
+"33.6 Kbps Modem\n"
+"34.4 Kbps Modem\n"
+"56 Kbps Modem/ISDN\n"
+"112 Kbps Dual ISDN/DSL\n"
+"256 Kbps DSL/Cable\n"
+"384 Kbps DSL/Cable\n"
+"512 Kbps DSL/Cable\n"
+"1.5 Mbps T1/Intranet/LAN\n"
+"Intranet/LAN"
+msgstr ""
+"modem a 14.400 b/s\n"
+"modem a 19.200 b/s\n"
+"modem a 28.800 b/s\n"
+"modem a 33.600 b/s\n"
+"modem a 34.400 b/s\n"
+"modem/RDIS a 56 Kb/s\n"
+"dobe RDIS/DSL a 112 Kb/s\n"
+"DSL/cåbe a 256 Kb/s\n"
+"DSL/cåbe a 384 Kb/s\n"
+"DSL/cåbe a 512 Kb/s\n"
+"T1/rantoele locåle a 1,5 Mb/s\n"
+"rantoele locåle"
+
+#: data/idol.glade.h:14
+msgid "16:9 (Widescreen)"
+msgstr "16:9 (lådje waitroûle)"
+
+#: data/idol.glade.h:15
+msgid "2.11:1 (DVB)"
+msgstr "2.11:1 (DVB)"
+
+#: data/idol.glade.h:16
+msgid "4:3 (TV)"
+msgstr "4:3 (TV)"
+
+#: data/idol.glade.h:17
+msgid "<b>Audio Output</b>"
+msgstr "<b>Rexhowe odio</b>"
+
+#: data/idol.glade.h:18
+msgid "<b>Color balance</b>"
+msgstr "<b>Balance di coleur</b>"
+
+#: data/idol.glade.h:19
+msgid "<b>Display</b>"
+msgstr "<b>Håynaedje</b>"
+
+#: data/idol.glade.h:20
+msgid "<b>Networking</b>"
+msgstr "<b>Rantoele</b>"
+
+#: data/idol.glade.h:21
+msgid "<b>Optical Device</b>"
+msgstr "<b>Éndjin optike</b>"
+
+#: data/idol.glade.h:22
+msgid "<b>Proprietary Plugins</b>"
+msgstr "<b>Tchôke-divins prôpietaires</b>"
+
+#: data/idol.glade.h:23
+msgid "<b>TV-Out</b>"
+msgstr "<b>Rexhowe TV</b>"
+
+#: data/idol.glade.h:24
+msgid "<b>Visual Effects</b>"
+msgstr "<b>Efets vizuwels</b>"
+
+#: data/idol.glade.h:25
+msgid "<span size=\"medium\"><b>No File</b></span>"
+msgstr "<span size=\"medium\"><b>Nou fitchî</b></span>"
+
+#: data/idol.glade.h:26
+msgid "<span size=\"medium\"><b>No file</b></span>"
+msgstr "<span size=\"medium\"><b>Nou fitchî</b></span>"
+
+#: data/idol.glade.h:27
+msgid "A_udio Menu"
+msgstr "Menu _odio"
+
+#: data/idol.glade.h:28
+msgid "Always on _Top"
+msgstr "Tofer al _copete"
+
+#: data/idol.glade.h:29
+msgid "Always on top"
+msgstr "Tofer al copete"
+
+#: data/idol.glade.h:30
+msgid "Audio"
+msgstr "Odio"
+
+#: data/idol.glade.h:31 src/idol-sublang.c:112 src/idol-sublang.c:133
+msgid "Auto"
+msgstr "Otomatike"
+
+#: data/idol.glade.h:32
+msgid "Automatically _resize the window when a new video is loaded"
+msgstr ""
+
+#: data/idol.glade.h:33
+msgid "Co_ntrast:"
+msgstr "Co_ntrasse:"
+
+#: data/idol.glade.h:34
+msgid "Connection _speed:"
+msgstr "_Raddisté do raloyaedje:"
+
+#: data/idol.glade.h:35
+msgid "Deinterlace"
+msgstr ""
+
+#: data/idol.glade.h:36
+msgid "Display"
+msgstr "Håynaedje"
+
+#: data/idol.glade.h:37
+msgid "Exit Fullscreen"
+msgstr ""
+
+#: data/idol.glade.h:38
+msgid "Fit Window to Movie"
+msgstr ""
+
+#: data/idol.glade.h:39
+msgid "General"
+msgstr "Djenerå"
+
+#: data/idol.glade.h:40
+msgid "Go to the DVD menu"
+msgstr "Aler å menu do DVD"
+
+#: data/idol.glade.h:41
+msgid "Go to the angle menu"
+msgstr ""
+
+#: data/idol.glade.h:42
+msgid "Go to the audio menu"
+msgstr ""
+
+#: data/idol.glade.h:43
+msgid "Go to the chapter menu"
+msgstr ""
+
+#: data/idol.glade.h:44
+msgid "Go to the title menu"
+msgstr ""
+
+#: data/idol.glade.h:45
+msgid "Help contents"
+msgstr "Ådvins d' l' aidance"
+
+#: data/idol.glade.h:46
+msgid "Languages"
+msgstr "Lingaedjes"
+
+#: data/idol.glade.h:47 src/idol-options.c:39
+msgid "Next"
+msgstr "Shuvant"
+
+#: data/idol.glade.h:49
+msgid "No Language Selection Available"
+msgstr "Li lingaedje èn pout nén esse tchoezi"
+
+#: data/idol.glade.h:50
+msgid "No subtitles selection available"
+msgstr "Les sotites èn polnut nén esse tchoezis"
+
+#: data/idol.glade.h:51
+msgid "Open _Location..."
+msgstr "Drovi _eplaeçmint..."
+
+#: data/idol.glade.h:52
+msgid "Open a non-local file"
+msgstr ""
+
+#: data/idol.glade.h:54
+msgid "Play _Disc"
+msgstr "Djouwer ene _plake"
+
+#: data/idol.glade.h:55
+msgid "Play a Video or Audio Disc"
+msgstr "Djouwer ene plake son ou videyo"
+
+#: data/idol.glade.h:57 src/idol-options.c:38
+msgid "Play/Pause"
+msgstr "Djouwer/Djoker"
+
+#: data/idol.glade.h:58 src/idol-options.c:40
+msgid "Previous"
+msgstr "Di dvant"
+
+#: data/idol.glade.h:60
+msgid "Resize _1:1"
+msgstr ""
+
+#: data/idol.glade.h:61
+msgid "Resize _2:1"
+msgstr ""
+
+#: data/idol.glade.h:62
+msgid "Resize to half the video size"
+msgstr ""
+
+#: data/idol.glade.h:63
+msgid "Resize to twice the video size"
+msgstr ""
+
+#: data/idol.glade.h:64
+msgid "Resize to video size"
+msgstr ""
+
+#: data/idol.glade.h:65
+msgid "S_ubtitles"
+msgstr "So_tites"
+
+#: data/idol.glade.h:66
+msgid "Sat_uration:"
+msgstr "Sat_uraedje:"
+
+#: data/idol.glade.h:67
+msgid "Set the aspect ratio"
+msgstr ""
+
+#: data/idol.glade.h:68
+msgid "Set the repeat mode"
+msgstr ""
+
+#: data/idol.glade.h:69
+msgid "Set the shuffle mode"
+msgstr ""
+
+#: data/idol.glade.h:70
+msgid "Sets 16:9 (Anamorphic) aspect ratio"
+msgstr ""
+
+#: data/idol.glade.h:71
+msgid "Sets 2.11:1 (DVB) aspect ratio"
+msgstr ""
+
+#: data/idol.glade.h:72
+msgid "Sets 4:3 (TV) aspect ratio"
+msgstr ""
+
+#: data/idol.glade.h:73
+msgid "Sets automatic aspect ratio"
+msgstr ""
+
+#: data/idol.glade.h:74
+msgid "Sets square aspect ratio"
+msgstr ""
+
+#: data/idol.glade.h:76
+msgid "Show _visual effects when an audio file is played"
+msgstr ""
+
+#: data/idol.glade.h:78
+msgid "Show or hide the playlist"
+msgstr ""
+
+#: data/idol.glade.h:79
+msgid "Show/Hide Playlist"
+msgstr ""
+
+#: data/idol.glade.h:80
+msgid "Shuff_le Mode"
+msgstr ""
+
+#: data/idol.glade.h:85
+msgid "Skip to a specific time"
+msgstr ""
+
+#: data/idol.glade.h:86
+msgid ""
+"Small\n"
+"Normal\n"
+"Large\n"
+"Extra Large"
+msgstr ""
+
+#: data/idol.glade.h:90
+msgid "Square"
+msgstr "Cwåré"
+
+#: data/idol.glade.h:91
+msgid ""
+"Stereo\n"
+"4-channel\n"
+"4.1-channel\n"
+"5.0-channel\n"
+"5.1-channel\n"
+"AC3 Passthrough"
+msgstr ""
+
+#: data/idol.glade.h:97
+msgid "Subtitles"
+msgstr "Sotites"
+
+#: data/idol.glade.h:98
+msgid "Switch to fullscreen"
+msgstr ""
+
+#: data/idol.glade.h:99
+msgid "Take _Screenshot"
+msgstr "_Waitroûlêye"
+
+#: data/idol.glade.h:100
+msgid "Take a screenshot"
+msgstr "Fé ene imådje del waitroûlêye"
+
+#: data/idol.glade.h:101
+msgid "Time:"
+msgstr "Tins:"
+
+#: data/idol.glade.h:103
+msgid "Idol Preferences"
+msgstr "Preferinces di idol"
+
+#: data/idol.glade.h:104
+msgid "Tv-out in fullscreen by Nvidia (NTSC)"
+msgstr ""
+
+#: data/idol.glade.h:105
+msgid "Tv-out in fullscreen by Nvidia (PAL)"
+msgstr ""
+
+#: data/idol.glade.h:106
+msgid "Visualization _size:"
+msgstr ""
+
+#: data/idol.glade.h:109
+msgid "Volume down"
+msgstr ""
+
+#: data/idol.glade.h:111
+msgid "Zoom In"
+msgstr "Zoumer"
+
+#: data/idol.glade.h:112
+msgid "Zoom Out"
+msgstr "Diszoumer"
+
+#: data/idol.glade.h:113
+msgid "Zoom Reset"
+msgstr ""
+
+#: data/idol.glade.h:114
+msgid "Zoom in"
+msgstr "Agrandi"
+
+#: data/idol.glade.h:115
+msgid "Zoom out"
+msgstr "Raptiti"
+
+#: data/idol.glade.h:116
+msgid "Zoom reset"
+msgstr ""
+
+#: data/idol.glade.h:117
+msgid "_Add Proprietary Plugins..."
+msgstr "_Radjouter des tchôke-divins prôpietaires..."
+
+#: data/idol.glade.h:118
+msgid "_Angle Menu"
+msgstr ""
+
+#: data/idol.glade.h:119
+msgid "_Aspect Ratio"
+msgstr ""
+
+#: data/idol.glade.h:120
+msgid "_Audio output type:"
+msgstr ""
+
+#: data/idol.glade.h:121
+msgid "_Brightness:"
+msgstr ""
+
+#: data/idol.glade.h:122
+msgid "_Chapter Menu"
+msgstr ""
+
+#: data/idol.glade.h:123
+msgid "_Contents"
+msgstr "Åd_vins"
+
+#: data/idol.glade.h:124
+msgid "_DVD Menu"
+msgstr "Menu _DVD"
+
+#: data/idol.glade.h:125
+msgid "_DXR3 TV-out"
+msgstr ""
+
+#: data/idol.glade.h:126
+msgid "_Deinterlace"
+msgstr ""
+
+#: data/idol.glade.h:127
+msgid "_Eject"
+msgstr "Fé re_xhe"
+
+#: data/idol.glade.h:128
+msgid "_Fullscreen"
+msgstr ""
+
+#: data/idol.glade.h:129
+msgid "_Go"
+msgstr "_Evoye!"
+
+#: data/idol.glade.h:130
+msgid "_Hue:"
+msgstr "_Tinte:"
+
+#: data/idol.glade.h:131
+msgid "_Languages"
+msgstr "_Lingaedjes"
+
+#: data/idol.glade.h:132
+msgid "_Movie"
+msgstr "_Fîme"
+
+#: data/idol.glade.h:134
+msgid "_No TV-out"
+msgstr ""
+
+#: data/idol.glade.h:135
+msgid "_Optical device path:"
+msgstr ""
+
+#: data/idol.glade.h:137
+msgid "_Repeat Mode"
+msgstr ""
+
+#: data/idol.glade.h:138
+msgid "_Reset To Defaults"
+msgstr ""
+
+#: data/idol.glade.h:139
+msgid "_Resize 1:2"
+msgstr ""
+
+#: data/idol.glade.h:140
+msgid "_Show/Hide Playlist"
+msgstr ""
+
+#: data/idol.glade.h:141
+msgid "_Skip to..."
+msgstr ""
+
+#: data/idol.glade.h:142
+msgid "_Sound"
+msgstr "_Son"
+
+#: data/idol.glade.h:143
+msgid "_Title Menu"
+msgstr ""
+
+#: data/idol.glade.h:144
+msgid "_Type of visualization:"
+msgstr ""
+
+#: data/idol.schemas.in.h:1
+msgid "Enable deinterlacing"
+msgstr ""
+
+#: data/idol.schemas.in.h:2
+msgid "Enable deinterlacing."
+msgstr ""
+
+#: data/idol.schemas.in.h:3
+msgid "Height of the video widget"
+msgstr ""
+
+#: data/idol.schemas.in.h:4
+msgid "Name of the visual effects plugins"
+msgstr ""
+
+#: data/idol.schemas.in.h:5
+msgid "Name of the visual effects plugins."
+msgstr ""
+
+#: data/idol.schemas.in.h:6
+msgid "Path to the optical media device"
+msgstr ""
+
+#: data/idol.schemas.in.h:7
+msgid "Path to the optical media device."
+msgstr ""
+
+#: data/idol.schemas.in.h:8
+msgid "Repeat mode"
+msgstr ""
+
+#: data/idol.schemas.in.h:9
+msgid "Repeat mode."
+msgstr ""
+
+#: data/idol.schemas.in.h:10
+msgid "Resize the canvas automatically on file load"
+msgstr ""
+
+#: data/idol.schemas.in.h:11
+msgid "Resize the canvas automatically on file load."
+msgstr ""
+
+#: data/idol.schemas.in.h:12
+msgid "Show visual effects when no video is displayed"
+msgstr ""
+
+#: data/idol.schemas.in.h:13
+msgid "Show visual effects when playing an audio only file."
+msgstr ""
+
+#: data/idol.schemas.in.h:14
+msgid "Shuffle mode"
+msgstr ""
+
+#: data/idol.schemas.in.h:15
+msgid "Shuffle mode."
+msgstr ""
+
+#: data/idol.schemas.in.h:16
+msgid "Sound volume"
+msgstr ""
+
+#: data/idol.schemas.in.h:17
+msgid "Sound volume, in percent, between 0 and 100"
+msgstr ""
+
+#: data/idol.schemas.in.h:18
+msgid "The brightness of the video"
+msgstr ""
+
+#: data/idol.schemas.in.h:19
+msgid "The brightness of the video."
+msgstr ""
+
+#: data/idol.schemas.in.h:20
+msgid "The contrast of the video"
+msgstr ""
+
+#: data/idol.schemas.in.h:21
+msgid "The contrast of the video."
+msgstr ""
+
+#: data/idol.schemas.in.h:22
+msgid "The hue of the video"
+msgstr ""
+
+#: data/idol.schemas.in.h:23
+msgid "The hue of the video."
+msgstr ""
+
+#: data/idol.schemas.in.h:24
+msgid "The saturation of the video"
+msgstr ""
+
+#: data/idol.schemas.in.h:25
+msgid "The saturation of the video."
+msgstr ""
+
+#: data/idol.schemas.in.h:26
+msgid "Type of audio output to use"
+msgstr ""
+
+#: data/idol.schemas.in.h:27
+msgid ""
+"Type of audio output to use: \"0\" for stereo, \"1\" for 4-channel output, "
+"\"2\" for 5.0 channel output, \"3\" for 5.1 channel output, \"4\" for AC3 "
+"Passthrough."
+msgstr ""
+
+#: data/idol.schemas.in.h:28
+msgid "Whether the main window should stay on top"
+msgstr ""
+
+#: data/idol.schemas.in.h:29
+msgid "Whether the main window should stay on top of the other ones"
+msgstr ""
+
+#: data/idol.schemas.in.h:30
+msgid "Whether to enable debug for the playback engine"
+msgstr ""
+
+#: data/idol.schemas.in.h:31
+msgid "Whether to enable debug for the playback engine."
+msgstr ""
+
+#: data/idol.schemas.in.h:32
+msgid "Width of the video widget"
+msgstr ""
+
+#: data/idol.schemas.in.h:33
+msgid "X coordinate for the Playlist"
+msgstr ""
+
+#: data/idol.schemas.in.h:34
+msgid "X coordinate for the Playlist."
+msgstr ""
+
+#: data/idol.schemas.in.h:35
+msgid "Y coordinate for the Playlist"
+msgstr ""
+
+#: data/idol.schemas.in.h:36
+msgid "Y coordinate for the Playlist."
+msgstr ""
+
+#: data/uri.glade.h:2
+msgid "Enter the _location (URI) of the file you would like to open:"
+msgstr ""
+
+#: data/uri.glade.h:3
+msgid "Open from URI"
+msgstr ""
+
+#: data/vanity.desktop.in.in.h:1
+msgid "Vanity Webcam utility"
+msgstr ""
+
+#: data/vanity.desktop.in.in.h:2
+msgid "View live webcam and upload pictures"
+msgstr ""
+
+#: data/vanity.glade.h:1
+msgid "Save File"
+msgstr "Schaper l' fitchî"
+
+#: data/vanity.glade.h:2 src/vanity.c:259
+msgid "Vanity"
+msgstr ""
+
+#: data/vanity.glade.h:3
+msgid "Vanity Preferences"
+msgstr ""
+
+#: data/vanity.glade.h:4
+msgid "Zoom 1:1"
+msgstr ""
+
+#: data/vanity.glade.h:5
+msgid "Zoom 1:2"
+msgstr ""
+
+#: data/vanity.glade.h:6
+msgid "Zoom 2:1"
+msgstr ""
+
+#: data/vanity.glade.h:7
+msgid "Zoom _1:1"
+msgstr ""
+
+#: data/vanity.glade.h:8
+msgid "Zoom _2:1"
+msgstr ""
+
+#: data/vanity.glade.h:9
+msgid "_Picture"
+msgstr ""
+
+#: data/vanity.glade.h:10
+msgid "_Zoom 1:2"
+msgstr ""
+
+#: src/bacon-v4l-selection.c:191
+msgid "Unnamed CDROM"
+msgstr ""
+
+#: src/bacon-video-widget-gst.c:67
+msgid "Idol Video Window"
+msgstr "Purnea videyo d' idol"
+
+#: src/bacon-video-widget-gst.c:2958
+msgid "Failed to create a GStreamer play object"
+msgstr ""
+
+#. Duration
+#: src/bacon-video-widget-properties.c:102
+msgid "0 second"
+msgstr ""
+
+#: src/bacon-video-widget-properties.c:199
+#, c-format
+msgid "%d frames per second"
+msgstr ""
+
+#: src/bacon-video-widget-properties.c:221
+#, c-format
+msgid "%d kbps"
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:668
+#, c-format
+msgid ""
+"Couldn't load the '%s' audio driver\n"
+"Check that the device is not busy."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1123 src/bacon-video-widget-xine.c:1641
+msgid ""
+"No video output is available. Make sure that the program is correctly "
+"installed."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1244
+msgid "The server you are trying to connect to is not known."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1248
+#, c-format
+msgid "The device name you specified (%s) seems to be invalid."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1252
+#, c-format
+msgid "The server you are trying to connect to (%s) is unreachable."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1256
+msgid "The connection to this server was refused."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1260
+msgid "The specified movie could not be found."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1266 src/bacon-video-widget-xine.c:1284
+msgid ""
+"The source seems encrypted, and can't be read. Are you trying to play an "
+"encrypted DVD without libdvdcss?"
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1269
+msgid "The movie could not be read."
+msgstr "Li fime èn pout nén esse léjhou."
+
+#: src/bacon-video-widget-xine.c:1278
+#, c-format
+msgid "A problem occured while loading a library or a decoder (%s)."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1287
+msgid "This file is encrypted and cannot be played back."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1292
+msgid "For security reasons, this movie can not be played back."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1297
+msgid "The audio device is busy. Is another application using it?"
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1302
+msgid "You are not allowed to open this file."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1304
+msgid "The server refused access to this file or stream."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1452
+msgid "There is no plugin to handle this movie."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1456
+msgid "This movie is broken and can not be played further."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1460
+msgid "This location is not a valid one."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1464
+msgid "This movie could not be opened."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1468
+msgid "Generic Error."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1940
+msgid "This movie is a still image. You can open it with an image viewer."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1964
+#, c-format
+msgid ""
+"Video codec '%s' is not handled. You might need to install additional "
+"plugins to be able to play some types of movies"
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1968
+#, c-format
+msgid ""
+"Audio codec '%s' is not handled. You might need to install additional "
+"plugins to be able to play some types of movies"
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:1984
+msgid "This is an audio-only file, and there is no audio output available."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:3397
+#, c-format
+msgid "Language %d"
+msgstr "Lingaedje %d"
+
+#: src/bacon-video-widget-xine.c:3480
+msgid "Movie is not playing."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:3489
+msgid "No video to capture."
+msgstr ""
+
+#: src/bacon-video-widget-xine.c:3497
+msgid "Video codec is not handled."
+msgstr ""
+
+#: src/idol-disc.c:115
+#, c-format
+msgid "Failed to find real device node for %s: %s"
+msgstr ""
+
+#: src/idol-disc.c:126
+#, c-format
+msgid "Failed to read symbolic link %s: %s"
+msgstr ""
+
+#: src/idol-disc.c:210
+#, c-format
+msgid "Failed to find mountpoint for device %s in /etc/fstab"
+msgstr ""
+
+#: src/idol-disc.c:248
+msgid "Please check that a disc is present in the drive."
+msgstr ""
+
+#: src/idol-disc.c:251
+#, c-format
+msgid "Failed to open device %s for reading: %s"
+msgstr ""
+
+#: src/idol-disc.c:262
+#, c-format
+msgid "Failed to retrieve capabilities of device %s: %s"
+msgstr ""
+
+#: src/idol-disc.c:295
+#, c-format
+msgid "Drive status 0x%x (%s) - check disc"
+msgstr ""
+
+#: src/idol-disc.c:328
+#, c-format
+msgid "Unexpected error status %d while mounting %s"
+msgstr ""
+
+#: src/idol-disc.c:380
+#, c-format
+msgid "Error getting %s disc status: %s"
+msgstr ""
+
+#: src/idol-disc.c:409
+#, c-format
+msgid "Unexpected/unknown cd type 0x%x (%s)"
+msgstr ""
+
+#: src/idol-disc.c:573
+msgid "Audio CD"
+msgstr "Plake lazer odio"
+
+#: src/idol-disc.c:575
+msgid "Video CD"
+msgstr "CD videyo"
+
+#: src/idol-disc.c:577
+msgid "DVD"
+msgstr "DVD"
+
+#: src/idol-interface.c:113
+#, c-format
+msgid "Couldn't load the '%s' interface."
+msgstr "Dji n' a savou tcherdjî l' eterface «%s»."
+
+#: src/idol-interface.c:115 src/idol-interface.c:117
+msgid "Make sure that Idol is properly installed."
+msgstr ""
+
+#: src/idol-options.c:36
+msgid "Backend options"
+msgstr ""
+
+#: src/idol-options.c:37
+msgid "Enable debug"
+msgstr ""
+
+#: src/idol-options.c:41
+msgid "Seek Forwards"
+msgstr ""
+
+#: src/idol-options.c:42
+msgid "Seek Backwards"
+msgstr ""
+
+#: src/idol-options.c:43
+msgid "Volume Up"
+msgstr "Hôssî l' volume"
+
+#: src/idol-options.c:44
+msgid "Volume Down"
+msgstr "Baxhî l' volume"
+
+#: src/idol-options.c:45
+msgid "Toggle Fullscreen"
+msgstr ""
+
+#: src/idol-options.c:46
+msgid "Show/Hide Controls"
+msgstr ""
+
+#: src/idol-options.c:47
+msgid "Quit"
+msgstr "Cwiter"
+
+#: src/idol-options.c:48
+msgid "Enqueue"
+msgstr "El cawêye"
+
+#: src/idol-options.c:49
+msgid "Replace"
+msgstr "Replaecî"
+
+#: src/idol-options.c:110
+#, c-format
+msgid "Option '%s' is unknown and was ignored\n"
+msgstr "Li tchuze «%s» n' est nén cnoxhowe, elle est ignorêye\n"
+
+#: src/idol-pl-parser.c:215
+#, c-format
+msgid "Couldn't write parser: %s"
+msgstr ""
+
+#: src/idol-pl-parser.c:321 src/idol-pl-parser.c:444
+#, c-format
+msgid "Couldn't open file '%s': %s"
+msgstr ""
+
+#: src/idol-playlist.c:299
+msgid "Could not save the playlist"
+msgstr ""
+
+#: src/idol-playlist.c:632
+msgid "Select Movies or Playlists"
+msgstr ""
+
+#: src/idol-playlist.c:809
+msgid "Save playlist"
+msgstr "Schaper l' djivêye a djouwer"
+
+#: src/idol-playlist.c:854
+msgid "Overwrite file?"
+msgstr ""
+
+#: src/idol-playlist.c:856
+#, c-format
+msgid ""
+"A file named '%s' already exists.  Are you sure you want to overwrite it?"
+msgstr ""
+
+#: src/idol-playlist.c:1055
+msgid "Filename"
+msgstr "No do fitchî"
+
+#: src/idol-playlist.c:1502
+msgid "playlist"
+msgstr "djivêye a djouwer"
+
+#: src/idol-playlist.c:1645
+msgid "Playlist error"
+msgstr "Aroke avou l' djivêye a djouwer"
+
+#: src/idol-playlist.c:1645
+#, c-format
+msgid "The playlist '%s' could not be parsed, it might be damaged."
+msgstr ""
+
+#: src/idol-preferences.c:90
+msgid "Enable visual effects?"
+msgstr ""
+
+#: src/idol-preferences.c:92
+msgid ""
+"It seems you are running Idol remotely.\n"
+"Are you sure you want to enable the visual effects?"
+msgstr ""
+
+#: src/idol-preferences.c:145
+msgid ""
+"The change of this setting will only take effect for the next movie, or when "
+"Idol is restarted."
+msgstr ""
+
+#: src/idol-preferences.c:189
+msgid ""
+"Switching on or off this type of TV-Out requires a restart to take effect."
+msgstr ""
+
+#: src/idol-preferences.c:367
+msgid "Idol could not start the file manager."
+msgstr ""
+
+#: src/idol-preferences.c:394
+msgid "Changing the visuals effect type will require a restart to take effect."
+msgstr ""
+
+#: src/idol-preferences.c:493
+msgid ""
+"The change of audio output type will only take effect when Idol is "
+"restarted."
+msgstr ""
+
+#: src/idol-properties-main.c:112
+msgid "Audio/Video"
+msgstr "Odio/videyo"
+
+#: src/idol-screenshot.c:151 src/idol-screenshot.c:162
+#, c-format
+msgid "Screenshot%d.png"
+msgstr "Waitroûlêye%d.png"
+
+#: src/idol-screenshot.c:204
+#, c-format
+msgid "File '%s' already exists."
+msgstr "Li fitchî «%s» egzistêye dedja."
+
+#: src/idol-screenshot.c:206
+msgid "The screenshot was not saved"
+msgstr ""
+
+#: src/idol-screenshot.c:217
+msgid "There was an error saving the screenshot."
+msgstr ""
+
+#: src/idol-screenshot.c:250
+msgid "Screenshot.png"
+msgstr "Waitroûlêye.png"
+
+#: src/idol-statusbar.c:91
+msgid "Shadow type"
+msgstr "Sôre d' ombion"
+
+#: src/idol-statusbar.c:92
+msgid "Style of bevel around the statusbar text"
+msgstr ""
+
+#: src/idol-statusbar.c:124 src/idol.c:253 src/idol.c:566
+msgid "Stopped"
+msgstr "Aresté"
+
+#: src/idol-statusbar.c:141
+msgid "0:00 / 0:00"
+msgstr "0:00 / 0:00"
+
+#: src/idol-statusbar.c:166
+#, c-format
+msgid "%s (Streaming)"
+msgstr ""
+
+#. Elapsed / Total Length
+#: src/idol-statusbar.c:173 src/idol-time-label.c:70
+#, c-format
+msgid "%s / %s"
+msgstr "%s / %s"
+
+#. Seeking to Time / Total Length
+#: src/idol-statusbar.c:176
+#, c-format
+msgid "Seek to %s / %s"
+msgstr ""
+
+#: src/idol-statusbar.c:234
+msgid "Buffering"
+msgstr "Tampons"
+
+#. eg: 75 %
+#: src/idol-statusbar.c:237
+#, c-format
+msgid "%d %%"
+msgstr "%d %%"
+
+#: src/idol-sublang.c:108 src/idol-sublang.c:130
+msgid "None"
+msgstr "Nouk"
+
+#: src/idol.c:243
+msgid "Playing"
+msgstr "Djouwant"
+
+#: src/idol.c:248
+msgid "Paused"
+msgstr "Djoké"
+
+#: src/idol.c:289
+msgid "Idol could not eject the optical media."
+msgstr "Idol n' a nén polou fé rexhe li sopoirt optike."
+
+#: src/idol.c:314 src/idol.c:341 src/idol.c:715 src/idol.c:820
+#, c-format
+msgid "Idol could not play '%s'."
+msgstr "Idol èn pout nén djouwer «%s»."
+
+#: src/idol.c:367
+#, c-format
+msgid ""
+"Idol cannot play this type of media (%s) because you do not have the "
+"appropriate plugins to handle it."
+msgstr ""
+
+#: src/idol.c:368
+msgid ""
+"Please install the necessary plugins and restart Idol to be able to play "
+"this media."
+msgstr ""
+
+#: src/idol.c:376
+#, c-format
+msgid ""
+"Idol could not play this media (%s) although a plugin is present to handle "
+"it."
+msgstr ""
+
+#: src/idol.c:377
+msgid ""
+"You might want to check that a disc is present in the drive and that it is "
+"correctly configured."
+msgstr ""
+
+#. Title
+#: src/idol.c:559
+#, c-format
+msgid "%s - Idol Movie Player"
+msgstr "%s - Djouweu d' fimes Idol"
+
+#: src/idol.c:573
+msgid "No file"
+msgstr "Nou fitchî"
+
+#: src/idol.c:609 src/idol.c:1919
+msgid "Idol"
+msgstr "Idol"
+
+#: src/idol.c:1174 src/idol.c:1176
+msgid "An error occured"
+msgstr "Åk n' a nén stî"
+
+#: src/idol.c:1510
+msgid "Select files"
+msgstr "Tchoezi les fitchîs"
+
+#: src/idol.c:1581
+msgid "Open Location..."
+msgstr "Drovi eplaeçmint..."
+
+#: src/idol.c:1877
+msgid "Idol could not display the help contents."
+msgstr "Idol èn pout nén håyner l' ådvins d' l' aidance."
+
+#: src/idol.c:1915
+#, c-format
+msgid "Movie Player using %s"
+msgstr "Djouweu d' fimes, eployant %s"
+
+#: src/idol.c:1921 src/vanity.c:261
+msgid "Copyright © 2002-2005 Bastien Nocera"
+msgstr "Copyright © 2002-2005 Bastien Nocera"
+
+#: src/idol.c:1926 src/vanity.c:266
+msgid "translator-credits"
+msgstr "Pablo Saratxaga <pablo@walon.org>"
+
+#: src/idol.c:1959 src/idol.c:1967 src/vanity.c:299 src/vanity.c:307
+msgid "Idol could not get a screenshot of that film."
+msgstr ""
+
+#: src/idol.c:1967
+msgid "Please file a bug, this isn't supposed to happen."
+msgstr ""
+
+#: src/idol.c:1994
+msgid "Idol couldn't show the movie properties window."
+msgstr ""
+
+#: src/idol.c:1994
+msgid "Make sure that Idol is correctly installed."
+msgstr ""
+
+#: src/idol.c:2080
+#, c-format
+msgid "Idol could not seek in '%s'."
+msgstr ""
+
+#: src/idol.c:3240
+msgid "Idol could not startup."
+msgstr "Idol èn pout nén s' enonder."
+
+#: src/idol.c:3240
+msgid "No reason."
+msgstr "Nole råjhon."
+
+#: src/idol.c:3424
+msgid "Could not initialise the thread-safe libraries."
+msgstr ""
+
+#: src/idol.c:3424
+msgid "Verify your system installation. Idol will now exit."
+msgstr ""
+
+#: src/idol.c:3445
+msgid "Idol couln't initialise the configuration engine."
+msgstr ""
+
+#: src/idol.c:3445
+msgid "Make sure that MATE is properly installed."
+msgstr "Acertinez vs ki Mate est bén astalé comifåt."
+
+#. Main window
+#: src/idol.c:3472
+msgid "main window"
+msgstr ""
+
+#: src/idol.c:3477
+msgid "video popup menu"
+msgstr ""
+
+#: src/vanity.c:75
+msgid "Debug mode on"
+msgstr "Môde disbugaedje en alaedje"
+
+#: src/vanity.c:255
+#, c-format
+msgid "Webcam utility using %s"
+msgstr ""
+
+#: src/vanity.c:307
+msgid "Please file a bug, this isn't supposed to happen"
+msgstr ""
+
+#: src/vanity.c:550
+#, c-format
+msgid ""
+"Vanity could not startup:\n"
+"%s"
+msgstr ""
+
+#: src/vanity.c:551
+msgid "No reason"
+msgstr "Nole råjhon"
+
+#: src/vanity.c:589
+#, c-format
+msgid ""
+"Vanity could not contact the webcam.\n"
+"Reason: %s"
+msgstr ""
+
+#: src/vanity.c:605
+#, c-format
+msgid ""
+"Vanity could not play video from the webcam.\n"
+"Reason: %s"
+msgstr ""
+
+#: src/vanity.c:641
+msgid "Vanity Webcam Utility"
+msgstr ""
+
+#: src/vanity.c:646
+msgid ""
+"Could not initialise the thread-safe libraries.\n"
+"Verify your system installation. Vanity will now exit."
+msgstr ""
+
+#: src/vanity.c:671
+#, c-format
+msgid ""
+"Vanity couln't initialise the \n"
+"configuration engine:\n"
+"%s"
+msgstr ""
+
+#: src/vanity.c:691 src/vanity.c:706
+msgid ""
+"Couldn't load the main interface (vanity.glade).\n"
+"Make sure that Vanity is properly installed."
+msgstr ""
+
+#: src/video-utils.c:290
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d eure"
+msgstr[1] "%d eures"
+
+#: src/video-utils.c:292
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d munute"
+msgstr[1] "%d munutures"
+
+#: src/video-utils.c:295
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d segonde"
+msgstr[1] "%d segondes"
+
+#. hour:minutes:seconds
+#: src/video-utils.c:301
+#, c-format
+msgid "%s %s %s"
+msgstr "%se%s:%s"
+
+#. minutes:seconds
+#: src/video-utils.c:304
+#, c-format
+msgid "%s %s"
+msgstr "%s:%s"
+
+#. seconds
+#: src/video-utils.c:307
+#, c-format
+msgid "%s"
+msgstr "%s"

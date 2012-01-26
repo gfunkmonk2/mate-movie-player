@@ -1,0 +1,18 @@
+From: Omer Akram <om26er@ubuntu.com>
+Author: Philip Withnall <philip@tecnocode.co.uk>
+Subject: Idol shows 'videoplayback' instead of the video title.
+Origin: http://git.mate.org/browse/idol/commit/?id=3bbc968ce21b0af0f586169cec87e60493d4af7c
+Bug: https://bugs.mate.org/638567
+Bug-Ubuntu: https://launchpad.net/bugs/647607
+
+--- a/src/idol-object.c
++++ b/src/idol-object.c
+@@ -505,7 +505,7 @@ add_to_playlist_and_play_cb (IdolPlaylist *playlist, GAsyncResult *async_result
+ 	playlist_changed = idol_playlist_add_mrl_finish (playlist, async_result);
+ 
+ 	if (data->add_to_recent != FALSE)
+-		gtk_recent_manager_add_item (data->idol->recent_manager, data->uri);
++		idol_action_add_recent (data->idol, data->uri, data->display_name);
+ 	end = idol_playlist_get_last (playlist);
+ 
+ 	idol_signal_unblock_by_data (playlist, data->idol);

@@ -1,0 +1,12 @@
+mate-movie-player (1.1.0-2) oneiric; urgency=low
+
+  * Fix build & add mate-movie-player meta-package
+
+ -- Matt Rinsch <gfunkmonk@gmail.com>  Tue, 24 Jan 2012 22:57:23 -0500
+
+mate-movie-player (1.1.0-1) oneiric; urgency=low
+
+  * Port Totem to MATE
+
+ -- Matt Rinsch <gfunkmonk@gmail.com>  Mon, 23 Jan 2012 05:41:39 -0500
+

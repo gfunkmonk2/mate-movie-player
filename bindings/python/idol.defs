@@ -1,0 +1,577 @@
+;; -*- scheme -*-
+; object definitions ...
+
+(define-object Plugin
+  (in-module "Idol")
+  (parent "GObject")
+  (c-name "IdolPlugin")
+  (gtype-id "IDOL_TYPE_PLUGIN")
+)
+
+(define-object Object
+  (in-module "Idol")
+  (parent "GObject")
+  (c-name "IdolObject")
+  (gtype-id "IDOL_TYPE_OBJECT")
+)
+
+(define-object CellRendererVideo
+  (in-module "Idol")
+  (parent "GtkCellRenderer")
+  (c-name "IdolCellRendererVideo")
+  (gtype-id "IDOL_TYPE_CELL_RENDERER_VIDEO")
+)
+
+(define-object VideoList
+  (in-module "Idol")
+  (parent "GtkTreeView")
+  (c-name "IdolVideoList")
+  (gtype-id "IDOL_TYPE_VIDEO_LIST")
+)
+
+;; Enumerations and flags ...
+
+(define-enum DiscMediaType
+  (in-module "Idol")
+  (c-name "IdolDiscMediaType")
+  (gtype-id "IDOL_TYPE_DISC_MEDIA_TYPE")
+  (values
+    '("error" "MEDIA_TYPE_ERROR")
+    '("data" "MEDIA_TYPE_DATA")
+    '("cdda" "MEDIA_TYPE_CDDA")
+    '("vcd" "MEDIA_TYPE_VCD")
+    '("dvd" "MEDIA_TYPE_DVD")
+    '("num-types" "MEDIA_TYPE_NUM_TYPES")
+  )
+)
+
+(define-enum PluginError
+  (in-module "Idol")
+  (c-name "IdolPluginError")
+  (gtype-id "IDOL_TYPE_PLUGIN_ERROR")
+  (values
+    '("n" "IDOL_PLUGIN_ERROR_ACTIVATION")
+  )
+)
+
+(define-enum RemoteCommand
+  (in-module "Idol")
+  (c-name "IdolRemoteCommand")
+  (gtype-id "IDOL_TYPE_REMOTE_COMMAND")
+  (values
+    '("unknown" "IDOL_REMOTE_COMMAND_UNKNOWN")
+    '("play" "IDOL_REMOTE_COMMAND_PLAY")
+    '("pause" "IDOL_REMOTE_COMMAND_PAUSE")
+    '("stop" "IDOL_REMOTE_COMMAND_STOP")
+    '("playpause" "IDOL_REMOTE_COMMAND_PLAYPAUSE")
+    '("next" "IDOL_REMOTE_COMMAND_NEXT")
+    '("previous" "IDOL_REMOTE_COMMAND_PREVIOUS")
+    '("seek-forward" "IDOL_REMOTE_COMMAND_SEEK_FORWARD")
+    '("seek-backward" "IDOL_REMOTE_COMMAND_SEEK_BACKWARD")
+    '("volume-up" "IDOL_REMOTE_COMMAND_VOLUME_UP")
+    '("volume-down" "IDOL_REMOTE_COMMAND_VOLUME_DOWN")
+    '("fullscreen" "IDOL_REMOTE_COMMAND_FULLSCREEN")
+    '("quit" "IDOL_REMOTE_COMMAND_QUIT")
+    '("enqueue" "IDOL_REMOTE_COMMAND_ENQUEUE")
+    '("replace" "IDOL_REMOTE_COMMAND_REPLACE")
+    '("show" "IDOL_REMOTE_COMMAND_SHOW")
+    '("toggle-controls" "IDOL_REMOTE_COMMAND_TOGGLE_CONTROLS")
+    '("show-playing" "IDOL_REMOTE_COMMAND_SHOW_PLAYING")
+    '("show-volume" "IDOL_REMOTE_COMMAND_SHOW_VOLUME")
+    '("up" "IDOL_REMOTE_COMMAND_UP")
+    '("down" "IDOL_REMOTE_COMMAND_DOWN")
+    '("left" "IDOL_REMOTE_COMMAND_LEFT")
+    '("right" "IDOL_REMOTE_COMMAND_RIGHT")
+    '("select" "IDOL_REMOTE_COMMAND_SELECT")
+    '("dvd-menu" "IDOL_REMOTE_COMMAND_DVD_MENU")
+    '("zoom-up" "IDOL_REMOTE_COMMAND_ZOOM_UP")
+    '("zoom-down" "IDOL_REMOTE_COMMAND_ZOOM_DOWN")
+    '("eject" "IDOL_REMOTE_COMMAND_EJECT")
+    '("play-dvd" "IDOL_REMOTE_COMMAND_PLAY_DVD")
+    '("mute" "IDOL_REMOTE_COMMAND_MUTE")
+    '("toggle-aspect" "IDOL_REMOTE_COMMAND_TOGGLE_ASPECT")
+  )
+)
+
+(define-enum RemoteSetting
+  (in-module "Idol")
+  (c-name "IdolRemoteSetting")
+  (gtype-id "IDOL_TYPE_REMOTE_SETTING")
+  (values
+    '("shuffle" "IDOL_REMOTE_SETTING_SHUFFLE")
+    '("repeat" "IDOL_REMOTE_SETTING_REPEAT")
+  )
+)
+
+;; From idol-plugin.h
+
+(define-function idol_plugin_error_quark
+  (c-name "idol_plugin_error_quark")
+  (return-type "GQuark")
+)
+
+(define-method activate
+  (of-object "IdolPlugin")
+  (c-name "idol_plugin_activate")
+  (return-type "gboolean")
+  (parameters
+    '("IdolObject*" "idol")
+    '("GError**" "error")
+  )
+)
+
+(define-method deactivate
+  (of-object "IdolPlugin")
+  (c-name "idol_plugin_deactivate")
+  (return-type "none")
+  (parameters
+    '("IdolObject*" "idol")
+  )
+)
+
+(define-method is_configurable
+  (of-object "IdolPlugin")
+  (c-name "idol_plugin_is_configurable")
+  (return-type "gboolean")
+)
+
+(define-method create_configure_dialog
+  (of-object "IdolPlugin")
+  (c-name "idol_plugin_create_configure_dialog")
+  (return-type "GtkWidget*")
+)
+
+(define-method find_file
+  (of-object "IdolPlugin")
+  (c-name "idol_plugin_find_file")
+  (return-type "char*")
+  (parameters
+    '("const-char*" "file")
+  )
+)
+
+(define-method load_interface
+  (of-object "IdolPlugin")
+  (c-name "idol_plugin_load_interface")
+  (return-type "GtkBuilder*")
+  (parameters
+    '("const-char*" "name")
+    '("gboolean" "fatal")
+    '("GtkWindow" "parent")
+    '("gpointer" "user_data")
+  )
+)
+
+
+;; From idol.h
+
+(define-method plugins_init
+  (of-object "IdolObject")
+  (c-name "idol_object_plugins_init")
+  (return-type "none")
+)
+
+(define-method plugins_shutdown
+  (of-object "IdolObject")
+  (c-name "idol_object_plugins_shutdown")
+  (return-type "none")
+)
+
+(define-method file_opened
+  (of-object "IdolObject")
+  (c-name "idol_file_opened")
+  (return-type "none")
+  (parameters
+    '("const-char*" "mrl")
+  )
+)
+
+(define-method file_closed
+  (of-object "IdolObject")
+  (c-name "idol_file_closed")
+  (return-type "none")
+)
+
+(define-method metadata_updated
+  (of-object "IdolObject")
+  (c-name "idol_metadata_updated")
+  (return-type "none")
+  (parameters
+    '("const-char*" "artist")
+    '("const-char*" "title")
+    '("const-char*" "album")
+    '("guint" "track_num")
+  )
+)
+
+(define-method action_exit
+  (of-object "IdolObject")
+  (c-name "idol_action_exit")
+  (return-type "none")
+)
+
+(define-method action_play
+  (of-object "IdolObject")
+  (c-name "idol_action_play")
+  (return-type "none")
+)
+
+(define-method action_stop
+  (of-object "IdolObject")
+  (c-name "idol_action_stop")
+  (return-type "none")
+)
+
+(define-method action_play_pause
+  (of-object "IdolObject")
+  (c-name "idol_action_play_pause")
+  (return-type "none")
+)
+
+(define-method action_pause
+  (of-object "IdolObject")
+  (c-name "idol_action_pause")
+  (return-type "none")
+)
+
+(define-method action_fullscreen_toggle
+  (of-object "IdolObject")
+  (c-name "idol_action_fullscreen_toggle")
+  (return-type "none")
+)
+
+(define-method action_fullscreen
+  (of-object "IdolObject")
+  (c-name "idol_action_fullscreen")
+  (return-type "none")
+  (parameters
+    '("gboolean" "state")
+  )
+)
+
+(define-method action_next
+  (of-object "IdolObject")
+  (c-name "idol_action_next")
+  (return-type "none")
+)
+
+(define-method action_previous
+  (of-object "IdolObject")
+  (c-name "idol_action_previous")
+  (return-type "none")
+)
+
+(define-method action_seek_time
+  (of-object "IdolObject")
+  (c-name "idol_action_seek_time")
+  (return-type "none")
+  (parameters
+    '("gint64" "msec")
+    '("gboolean" "accurate")
+  )
+)
+
+(define-method action_seek_relative
+  (of-object "IdolObject")
+  (c-name "idol_action_seek_relative")
+  (return-type "none")
+  (parameters
+    '("int" "off_msec")
+    '("gboolean" "accurate")
+  )
+)
+
+(define-method get_volume
+  (of-object "IdolObject")
+  (c-name "idol_get_volume")
+  (return-type "gfloat")
+)
+
+(define-method action_volume
+  (of-object "IdolObject")
+  (c-name "idol_action_volume")
+  (return-type "none")
+  (parameters
+    '("gfloat" "volume")
+  )
+)
+
+(define-method action_volume_relative
+  (of-object "IdolObject")
+  (c-name "idol_action_volume_relative")
+  (return-type "none")
+  (parameters
+    '("gfloat" "off_pct")
+  )
+)
+
+(define-method action_play_media
+  (of-object "IdolObject")
+  (c-name "idol_action_play_media")
+  (return-type "none")
+  (parameters
+    '("IdolDiscMediaType" "type")
+    '("const-char*" "device")
+  )
+)
+
+(define-method action_toggle_aspect_ratio
+  (of-object "IdolObject")
+  (c-name "idol_action_toggle_aspect_ratio")
+  (return-type "none")
+)
+
+(define-method action_set_aspect_ratio
+  (of-object "IdolObject")
+  (c-name "idol_action_set_aspect_ratio")
+  (return-type "none")
+  (parameters
+    '("int" "ratio")
+  )
+)
+
+(define-method action_get_aspect_ratio
+  (of-object "IdolObject")
+  (c-name "idol_action_get_aspect_ratio")
+  (return-type "int")
+)
+
+(define-method action_toggle_controls
+  (of-object "IdolObject")
+  (c-name "idol_action_toggle_controls")
+  (return-type "none")
+)
+
+(define-method action_set_scale_ratio
+  (of-object "IdolObject")
+  (c-name "idol_action_set_scale_ratio")
+  (return-type "none")
+  (parameters
+    '("gfloat" "ratio")
+  )
+)
+
+(define-method action_error
+  (of-object "IdolObject")
+  (c-name "idol_action_error")
+  (return-type "none")
+  (parameters
+    '("const-char*" "title")
+    '("const-char*" "reason")
+  )
+)
+
+(define-method action_play_media_device
+  (of-object "IdolObject")
+  (c-name "idol_action_play_media_device")
+  (return-type "none")
+  (parameters
+    '("const-char*" "device")
+  )
+)
+
+(define-method is_fullscreen
+  (of-object "IdolObject")
+  (c-name "idol_is_fullscreen")
+  (return-type "gboolean")
+)
+
+(define-method is_playing
+  (of-object "IdolObject")
+  (c-name "idol_is_playing")
+  (return-type "gboolean")
+)
+
+(define-method is_paused
+  (of-object "IdolObject")
+  (c-name "idol_is_paused")
+  (return-type "gboolean")
+)
+
+(define-method is_seekable
+  (of-object "IdolObject")
+  (c-name "idol_is_seekable")
+  (return-type "gboolean")
+)
+
+(define-method get_main_window
+  (of-object "IdolObject")
+  (c-name "idol_get_main_window")
+  (return-type "GtkWindow*")
+)
+
+(define-method get_ui_manager
+  (of-object "IdolObject")
+  (c-name "idol_get_ui_manager")
+  (return-type "GtkUIManager*")
+)
+
+(define-method get_video_widget
+  (of-object "IdolObject")
+  (c-name "idol_get_video_widget")
+  (return-type "GtkWidget*")
+)
+
+(define-method get_video_widget_backend_name
+  (of-object "IdolObject")
+  (c-name "idol_get_video_widget_backend_name")
+  (return-type "char*")
+)
+
+(define-method get_version
+  (of-object "IdolObject")
+  (c-name "idol_get_version")
+  (return-type "char*")
+)
+
+(define-method get_playlist_length
+  (of-object "IdolObject")
+  (c-name "idol_get_playlist_length")
+  (return-type "guint")
+)
+
+(define-method get_playlist_pos
+  (of-object "IdolObject")
+  (c-name "idol_get_playlist_pos")
+  (return-type "int")
+)
+
+(define-method get_title_at_playlist_pos
+  (of-object "IdolObject")
+  (c-name "idol_get_title_at_playlist_pos")
+  (parameters
+    '("guint" "playlist_index")
+  )
+  (return-type "char*")
+)
+
+(define-method get_current_time
+  (of-object "IdolObject")
+  (c-name "idol_get_current_time")
+  (return-type "gint64")
+)
+
+(define-method add_to_playlist_and_play
+  (of-object "IdolObject")
+  (c-name "idol_add_to_playlist_and_play")
+  (return-type "none")
+  (parameters
+    '("const-char*" "uri")
+    '("const-char*" "display_name")
+    '("gboolean" "add_to_recent")
+  )
+)
+
+(define-method get_current_mrl
+  (of-object "IdolObject")
+  (c-name "idol_get_current_mrl")
+  (return-type "char*")
+)
+
+(define-method set_current_subtitle
+  (of-object "IdolObject")
+  (c-name "idol_set_current_subtitle")
+  (return-type "none")
+  (parameters
+    '("const-char*" "subtitle_uri")
+  )
+)
+
+(define-method add_sidebar_page
+  (of-object "IdolObject")
+  (c-name "idol_add_sidebar_page")
+  (return-type "none")
+  (parameters
+    '("const-char*" "page_id")
+    '("const-char*" "title")
+    '("GtkWidget*" "main_widget")
+  )
+)
+
+(define-method remove_sidebar_page
+  (of-object "IdolObject")
+  (c-name "idol_remove_sidebar_page")
+  (return-type "none")
+  (parameters
+    '("const-char*" "page_id")
+  )
+)
+
+(define-method action_remote
+  (of-object "IdolObject")
+  (c-name "idol_action_remote")
+  (return-type "none")
+  (parameters
+    '("IdolRemoteCommand" "cmd")
+    '("const-char*" "url")
+  )
+)
+
+(define-method action_remote_set_setting
+  (of-object "IdolObject")
+  (c-name "idol_action_remote_set_setting")
+  (return-type "none")
+  (parameters
+    '("IdolRemoteSetting" "setting")
+    '("gboolean" "value")
+  )
+)
+
+(define-method action_remote_get_setting
+  (of-object "IdolObject")
+  (c-name "idol_action_remote_get_setting")
+  (return-type "gboolean")
+  (parameters
+    '("IdolRemoteSetting" "setting")
+  )
+)
+
+
+;; From ../../src/idol-cell-renderer-video.h
+
+(define-function idol_cell_renderer_video_new
+  (is-constructor-of "IdolCellRendererVideo")
+  (c-name "idol_cell_renderer_video_new")
+  (return-type "IdolCellRendererVideo*")
+  (properties
+    '("thumbnail" (argname "thumbnail") (optional))
+    '("title" (argname "title") (optional))
+    '("alignment" (argname "alignment") (optional))
+    '("use-placeholder" (argname "use_placeholder") (optional))
+  )
+)
+
+
+;; From idol-interface.h
+
+(define-method interface_error_with_link
+  (of-object "IdolObject")
+  (c-name "idol_interface_error_with_link")
+  (return-type "none")
+  (parameters
+    '("const-char*" "title")
+    '("const-char*" "reason")
+    '("const-char*" "uri")
+    '("const-char*" "label")
+    '("GtkWindow" "parent")
+  )
+)
+
+;; From ../../src/idol-video-list.h
+
+(define-function idol_video_list_new
+  (is-constructor-of "IdolVideoList")
+  (c-name "idol_video_list_new")
+  (return-type "IdolVideoList*")
+  (properties
+    '("tooltip-column" (argname "tooltip_column") (optional))
+    '("mrl-column" (argname "mrl_column") (optional))
+    '("idol" (argname "idol") (optional))
+  )
+)
+
+(define-method get_ui_manager
+  (of-object "IdolVideoList")
+  (c-name "idol_video_list_get_ui_manager")
+  (return-type "GtkUIManager*")
+)

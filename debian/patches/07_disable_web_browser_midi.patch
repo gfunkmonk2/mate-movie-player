@@ -1,0 +1,15 @@
+Description: Karmic's version of gstreamer does not support MIDI over HTTP
+Bug: https://bugs.launchpad.net/ubuntu/+source/idol/+bug/463102
+
+Index: idol-2.30.2/browser-plugin/idolPlugin.cpp
+===================================================================
+--- idol-2.30.2.orig/browser-plugin/idolPlugin.cpp	2010-05-13 01:41:20.000000000 +1000
++++ idol-2.30.2/browser-plugin/idolPlugin.cpp	2010-06-25 15:40:29.080485721 +1000
+@@ -127,7 +127,6 @@
+   { "application/x-nsv-vp3-mp3", "nsv", "video/x-nsv" },
+   { "video/flv", "flv", "application/x-flash-video" },
+   { "application/x-idol-plugin", "", "Idol Multimedia plugin" },
+-  { "audio/midi", "mid, midi", NULL },
+ #else
+ #error Unknown plugin type
+ #endif

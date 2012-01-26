@@ -1,0 +1,175 @@
+<!-- ##### SECTION Title ##### -->
+IdolPlugin
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT IdolPlugin ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG IdolPlugin:name ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT IdolPluginClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@activate: 
+@deactivate: 
+@create_configure_dialog: 
+
+<!-- ##### ENUM IdolPluginError ##### -->
+<para>
+
+</para>
+
+@IDOL_PLUGIN_ERROR_ACTIVATION: 
+
+<!-- ##### USER_FUNCTION IdolPluginActivationFunc ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@idol: 
+@error: 
+@Returns: 
+
+
+<!-- ##### USER_FUNCTION IdolPluginDeactivationFunc ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@idol: 
+
+
+<!-- ##### USER_FUNCTION IdolPluginWidgetFunc ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### MACRO IDOL_PLUGIN_DEFINE_TYPE ##### -->
+<para>
+
+</para>
+
+@TypeName: 
+@type_name: 
+@TYPE_PARENT: 
+
+
+<!-- ##### MACRO IDOL_PLUGIN_REGISTER ##### -->
+<para>
+
+</para>
+
+@PluginName: 
+@plugin_name: 
+
+
+<!-- ##### MACRO IDOL_PLUGIN_REGISTER_EXTENDED ##### -->
+<para>
+
+</para>
+
+@PluginName: 
+@plugin_name: 
+@_C_: 
+
+
+<!-- ##### MACRO IDOL_PLUGIN_REGISTER_TYPE ##### -->
+<para>
+
+</para>
+
+@type_name: 
+
+
+<!-- ##### FUNCTION idol_plugin_activate ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@idol: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_plugin_deactivate ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@idol: 
+
+
+<!-- ##### FUNCTION idol_plugin_create_configure_dialog ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_plugin_is_configurable ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_plugin_load_interface ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@name: 
+@fatal: 
+@parent: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION idol_plugin_find_file ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@file: 
+@Returns: 
